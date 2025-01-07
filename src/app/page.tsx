@@ -1,101 +1,250 @@
 import Image from "next/image";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Banner from "./components/Banner";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main>
+      {/* Banner Section */}
+      <Banner
+        title="Sudski veštak mašinske struke"
+        subtitle="Bratislav Igrutinović"
+        description="Dobrodošli na sajt profesionalnog sudskog procenitelja mašinske
+              struke. Sa višegodišnjim iskustvom i dubinskim znanjem iz oblasti
+              mašinstva, pružam stručne i pouzdane procene koje su ključne za
+              donošenje ispravnih odluka u različitim pravnim i poslovnim
+              situacijama."
+        buttonLink="/kontakt"
+        buttonText="Kontakt"
+      />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      {/* About Section */}
+      <section className="about-section">
+        <div className="container flex">
+          <div className="about-image content-end">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/bratislav.png"
+              alt="Profilna slika"
+              width={750}
+              height={450}
+              title="Bratislav Igrutinović"
+              className="max-w-[400px]"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
+          <div className="about-content ml-20">
+            <h2 className="text-4xl">
+              Sudski veštak mašinske struke, <br />
+              Bratislav Igrutinović
+            </h2>
+            <p>
+              Kao stalni sudski veštak mašinske struke vršim usluge procene
+              vrednosti pokretnosti odnosno mašina, mašinske opreme, motornih
+              vozila, vrednosti preduzeća i drugog, pri dobijanju kredita, kao i
+              u sudskim sporovima.
+            </p>
+            <p>
+              Ukoliko vam je potrebna stručna procena vrednosti pokretne imovine
+              ili ekspertsko mišljenje u sudskim postupcima, slobodno se
+              obratite meni kao pouzdanom sudskom veštaku mašinske struke. Vaši
+              interesi će biti zaštićeni uz moju temeljitu analizu,
+              profesionalizam i nepristrasnost.
+            </p>
+            <p>
+              Kao angažovani i iskusni stalni sudski veštak mašinske struke,
+              pružam širok spektar profesionalnih usluga u vezi s procenom
+              vrednosti pokretnih dobara, uključujući mašine, mašinsku opremu,
+              motorna vozila, vrednost preduzeća i drugih imovinskih elemenata.
+              Ova značajna uloga obuhvata različite situacije, od ocenjivanja
+              vrednosti radi dobijanja kredita, do pružanja stručnog mišljenja u
+              složenim sudskim sporovima.
+            </p>
+            <p className="mb-6">
+              Moja stručnost i profesionalizam omogućavaju mi da pravilno i
+              objektivno procenim vrednost pokretne imovine, oslanjajući se na
+              bogato znanje iz oblasti mašinskog inženjerstva i relevantnih
+              zakonskih propisa. Klijenti koji traže kredite mogu se osloniti na
+              moje ekspertno mišljenje kako bi osigurali pravičnu i tačnu
+              procenu vrednosti pokretnih dobara koje koriste kao kolateral.
+            </p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      {/* Wrap Section */}
+      <section className="wrap-section p-14 mt-[-40px]">
+        <div className="container text-white flex justify-between">
+          <h2 className="text-4xl">Spisak sudskih veštaka mašinske struke</h2>
+          <button className="listButton">
+            <a href="/licence.pdf">Vidi Spisak</a>
+          </button>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="services-section mt-32">
+        <div className="container">
+          <h2 className="text-4xl mb-6">Naše usluge</h2>
+
+          <div className="services flex flex-row w-full flex-wrap">
+            <div className="service w-[30%] border-2 p-8 m-4">
+              <div className="flex items-center">
+                <Image
+                  src="/accident.png"
+                  alt="accident icon"
+                  width={80}
+                  height={50}
+                />
+                <h4 className="service-link">
+                  Utvrđivanje stepena oštećenja i troškova popravke
+                </h4>
+              </div>
+              <div>
+                <p className="service-description">
+                  Izrada stručnog nalaza i mišljenja - procene tržišne vrednosti
+                  nastale štete na vozila, mašine, opreme i ostalih pokretnosti.
+                </p>
+              </div>
+              <div>
+                <button className="font-bold mt-8 hover:text-blue-500 flex items-center">
+                  <Link href="/usluge/procena-stete">
+                    Vidi više{" "}
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
+                      className="ml-2 hover:text-blue-500"
+                    />
+                  </Link>
+                </button>
+              </div>
+            </div>
+
+            <div className="service w-[30%] border-2 p-8 m-4">
+              <div className="flex items-center">
+                <Image
+                  src="/balance.png"
+                  alt="balance icon"
+                  width={60}
+                  height={50}
+                />
+                <h4 className="service-link">
+                  Procena vrednosti industrijskih mašina i opreme
+                </h4>
+              </div>
+              <div>
+                <p className="service-description pt-5">
+                  Izrada stručnog nalaza i mišljenja za pitanja iz oblasti
+                  mašinske tehnike.
+                </p>
+              </div>
+              <div>
+                <button className="font-bold mt-8 hover:text-blue-500 flex items-center">
+                  <Link href="/usluge/procena-vrednosti-industrijskih-masina">
+                    Vidi više{" "}
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
+                      className="ml-2 hover:text-blue-500"
+                    />
+                  </Link>
+                </button>
+              </div>
+            </div>
+
+            <div className="service w-[30%] border-2 p-8 m-4">
+              <div className="flex items-center">
+                <Image
+                  src="/production-line.png"
+                  alt="balance icon"
+                  width={60}
+                  height={50}
+                />
+                <h4 className="service-link">
+                  Procena vrednosti alata i proizvodnih linija
+                </h4>
+              </div>
+              <div>
+                <p className="service-description pt-5">
+                  Tačno utvrdjivanje vrednosti specijalizovanih alata i
+                  kompletnih proizvodnih sistema.
+                </p>
+              </div>
+              <div>
+                <button className="font-bold mt-8 hover:text-blue-500 flex items-center">
+                  <Link href="/usluge/procena-vrednosti-alata">
+                    Vidi više{" "}
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
+                      className="ml-2 hover:text-blue-500"
+                    />
+                  </Link>
+                </button>
+              </div>
+            </div>
+
+            <div className="service w-[46%] border-2 p-8 m-4">
+              <div className="flex items-center">
+                <Image
+                  src="/expert-opinion.png"
+                  alt="balance icon"
+                  width={60}
+                  height={50}
+                />
+                <h4 className="service-link">
+                  Izrada stručnih mišljenja za sudske procese
+                </h4>
+              </div>
+              <div>
+                <p className="service-description pt-5">
+                  Priprema tehničkih izveštaja i mišljenja koji se koriste kao
+                  dokazi u sudskim postupcima.
+                </p>
+              </div>
+              <div>
+                <button className="font-bold mt-8 hover:text-blue-500 flex items-center">
+                  <Link href="/usluge/izrada-strucnih-misljenja">
+                    Vidi više{" "}
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
+                      className="ml-2 hover:text-blue-500"
+                    />
+                  </Link>
+                </button>
+              </div>
+            </div>
+
+            <div className="service w-[47%] border-2 p-8 m-4">
+              <div className="flex items-center">
+                <Image
+                  src="/attorney.png"
+                  alt="balance icon"
+                  width={60}
+                  height={50}
+                />
+                <h4 className="service-link">
+                  Konsultacije i saveti u vezi sa procenom mašinskih sredstava
+                </h4>
+              </div>
+              <div>
+                <p className="service-description pt-5">
+                  Davanje profesionalnih preporuka i saveta vezanih za
+                  vrednovanje i upravljanje mašinskom imovinom.
+                </p>
+              </div>
+              <div>
+                <button className="font-bold mt-8 hover:text-blue-500 flex items-center">
+                  <Link href="/usluge/konsultacije-za-procenu-masinskih-sredstava">
+                    Vidi više{" "}
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
+                      className="ml-2 hover:text-blue-500"
+                    />
+                  </Link>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }

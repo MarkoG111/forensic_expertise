@@ -1,21 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #f9f9f9;
+  --primary-color: #000f2d;
+  --primary-alt: #80dcfd;
+  --hover-color: #005bb5;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: "Merriweather", serif;
+  background-color: var(--background);
+  color: #333;
+  padding-top: 160px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.bg-primary-color {
+  background-color: var(--primary-color);
+}
+
+.text-primary-alt {
+  color: var(--primary-alt);
+}
+
+.text-hover-color:hover {
+  color: var(--hover-color);
+}
+
+.bg-blue-100-15 {
+  background-color: rgba(119, 207, 239, 0.15);
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav {
+  position: fixed;
+  top: 106px; /* Adjust based on the height of the header */
+  left: 0;
+  width: 100%;
+  z-index: 999; /* Below header but above content */
+}
+
+.default-nav {
+  background-color: rgba(119, 207, 239, 0.15);
+  color: inherit;
+}
+
+.scrolled-nav {
+  background-color: var(--background);
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.17);
+}
+
+.scrolled-nav a {
+  color: #333;
+}
+
+.custom-link {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+  display: block;
+}
+
+.custom-link.active {
+  color: #007bff;
+}
+
+.custom-link:hover {
+  color: #007bff;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 15px;
+  margin: 0;
+  min-width: 340px;
+  z-index: 1000;
+}
+
+.group:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 8px;
+}
+.dropdown-menu li a {
+  display: block;
+  width: 100%;
+}
+
+.dropdown-menu li:nth-last-child(n + 2) {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #b8b6b6;
+}
+
+.dropdown-menu li:hover a, .useful-links a:hover {
+  color: #007bff;
+}
+
+/* Custom link styles */
+.custom-link {
+  text-decoration: none;
+  padding: 0 5px;
+  color: inherit;
+}
+
+.custom-link.active {
+  color: var(--hover-color);
+  border-bottom: 2px solid var(--hover-color);
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 12px 32px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.contact-button:hover {
+  background-color: white;
+  color: #1a1a1a;
+}
+
+.about-content p {
+  color: #636262;
+  padding: 14px 0;
+  text-align: justify;
+  line-height: 1.75;
+}
+
+/* Banner Section */
+.banner-section {
+  text-align: center;
+  margin-bottom: 40px;
+  /* height: 100vh; */
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 15, 45, 0.7), rgba(0, 26, 71, 0.7)),
+    url("/baner.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner-content {
+  max-width: 550px;
+}
+
+.banner-subtitle {
+  color: var(--primary-alt);
+  font-style: italic;
+  font-size: 30px;
+}
+
+.banner-title {
+  font-size: 60px;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: 700;
+}
+
+.banner-description {
+  font-size: 18px;
+  text-align: justify;
+  padding-top: 18px;
+}
+
+/* About Section */
+.about-section {
+  margin-bottom: 40px;
+}
+
+.wrap-section {
+  background-color: var(--primary-color);
+}
+
+.listButton {
+  transition: all 0.2s;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.listButton:hover {
+  background-color: white;
+  color: #1a1a1a;
+}
+
+/* Services Section */
+.services-section {
+  margin-bottom: 40px;
+}
+
+.service-link {
+  font-size: 25px;
+  padding-left: 14px;
+}
+
+.service-description {
+  color: #636262;
+  text-align: justify;
+}
+
+.service {
+  transition: border-color 0.3s ease;
+}
+
+.service:hover {
+  border-color: #336fcf;
+}
+
+/* Contact page */
+.contact-page input {
+  margin-bottom: 29px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.contact-page textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  min-height: 250px;
+}
+
+.contact-page button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.contact-page button:hover {
+  background-color: var(--hover-color);
+}
+
+@media (max-width: 768px) {
+  .banner-section {
+    background-attachment: scroll; /* Disable parallax on mobile */
+    height: 300px;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
 }

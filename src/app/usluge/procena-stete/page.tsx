@@ -1,0 +1,80 @@
+import Banner from "@/app/components/Banner";
+import Image from "next/image";
+
+export default function ProcenaStete() {
+  return (
+    <main>
+      <Banner title="Procena nastale štete" height="h-[50vh]" />
+
+      <section className="py-8 text-justify">
+        <div className="container px-4 py-6">
+          <h2 className="text-3xl font-semibold text-gray-800 mb-6">Pregled vozila</h2>
+
+          <ul className="list-disc pl-6 space-y-2 text-lg text-gray-700">
+            <li>
+              Izrada zapisnika o oštećenju vozila nakon saobraćajnih nezgoda
+            </li>
+            <li>
+              Izrada nalaza i obračuna visine štete na vozilima u sudskim i
+              vansudskim postupcima
+            </li>
+            <li>
+              Izrada kompletne dokumentacije, nalaza, zapisnika u saobraćajnim
+              nezgodama gde su vozila oštećena u inostranstvu (sa elementima
+              inostranosti)
+            </li>
+            <li>
+              Izrada nalaza na okolnost tehničke ispravnosti (neispravnosti)
+              pojedinih elemenata vozila
+            </li>
+            <li>Određivanje vrednosti vozila (uređaja) - i bez štete</li>
+          </ul>
+
+          <div className="mt-6">
+            <p className="text-lg text-gray-700 mb-4">
+              Prvi korak u utvrđivanju nastale štete na motornom vozilu
+              predstavlja utvrđivanje vrednosti motornog vozila na dan nastanka
+              štete.
+            </p>
+            <p className="text-lg text-gray-700 mb-4">
+              U drugoj fazi utvrđuje se vrednost spašenih delova (ostataka)
+              vozila.
+            </p>
+            <p className="text-lg text-gray-700 mb-4">
+              Utvrđivanje stepena i vrednosti oštećenja na vozilu.
+            </p>
+          </div>
+
+          <div className="my-6">
+            <Image src="/crash.jpg" alt="crash" width={800} height={100} />
+          </div>
+
+          <h2 className="text-3xl font-semibold text-gray-800 mt-12 mb-6">Obračun ukupne štete na vozilu</h2>
+          <p className="text-lg text-gray-700 mb-4">
+            Ukoliko su troškovi opravke i eventualno umanjena vrednost vozila
+            jednaki ili veći od vrednosti motornog vozila na dan nastanka štete
+            umanjenoj za procenjenu vrednost ostatka, radi se o totalnoj šteti.
+            U ovom slučaju se vrši likvidacija štete u visini vrednosti vozila,
+            obično umanjena za vrednost ostatka.
+          </p>
+          <p className="text-lg text-gray-700 mb-4">
+            U suprotnom vrši se popravka vozila u ovlašćenom servisu po
+            specifikaciji navedenoj u proračunu.
+          </p>
+          <p className="text-lg text-gray-700 mb-4">
+            Takođe po navedenoj metodologiji vrši se procena vrednosti vozila na
+            dan krađe, u slučaju procene vrednosti imovine lica iIi sličnim
+            slučajevima. Procenu vrši sudski veštak, po posebnim zahtevima
+            zainteresovanih stranaka.
+          </p>
+          <p className="text-lg text-gray-700 mb-4">
+            Proces procene se sastoji u prikupljanju dokumentacije, pregleda
+            vozila, slanja vozila na defektažu kada je to potrebno i analize
+            prikupljenih podataka gde koristim kataloge AMSS i kalkulacije iz
+            Audatex-system-a.
+          </p>
+        </div>
+      </section>
+    </main>
+  );
+}

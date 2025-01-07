@@ -179,7 +179,7 @@ nav {
   overflow: hidden;
   position: relative;
   background-image: linear-gradient(rgba(0, 15, 45, 0.7), rgba(0, 26, 71, 0.7)),
-    url("/baner.png");
+    url("/images/baner.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

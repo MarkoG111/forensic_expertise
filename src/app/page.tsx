@@ -25,7 +25,7 @@ export default function Home() {
         <div className="container flex">
           <div className="about-image content-end">
             <Image
-              src="/bratislav.png"
+              src="/images/bratislav.png"
               alt="Profilna slika"
               width={750}
               height={450}
@@ -93,7 +93,7 @@ export default function Home() {
             <div className="service w-[30%] border-2 p-8 m-4">
               <div className="flex items-center">
                 <Image
-                  src="/accident.png"
+                  src="/images/accident.png"
                   alt="accident icon"
                   width={80}
                   height={50}
@@ -124,7 +124,7 @@ export default function Home() {
             <div className="service w-[30%] border-2 p-8 m-4">
               <div className="flex items-center">
                 <Image
-                  src="/balance.png"
+                  src="/images/balance.png"
                   alt="balance icon"
                   width={60}
                   height={50}
@@ -155,7 +155,7 @@ export default function Home() {
             <div className="service w-[30%] border-2 p-8 m-4">
               <div className="flex items-center">
                 <Image
-                  src="/production-line.png"
+                  src="/images/production-line.png"
                   alt="balance icon"
                   width={60}
                   height={50}
@@ -186,7 +186,7 @@ export default function Home() {
             <div className="service w-[46%] border-2 p-8 m-4">
               <div className="flex items-center">
                 <Image
-                  src="/expert-opinion.png"
+                  src="/images/expert-opinion.png"
                   alt="balance icon"
                   width={60}
                   height={50}
@@ -217,7 +217,7 @@ export default function Home() {
             <div className="service w-[47%] border-2 p-8 m-4">
               <div className="flex items-center">
                 <Image
-                  src="/attorney.png"
+                  src="/images/attorney.png"
                   alt="balance icon"
                   width={60}
                   height={50}

@@ -3,6 +3,7 @@
 import Banner from "@/app/components/Banner";
 import Link from "next/link";
 import { useState } from "react";
+import Head from "next/head";
 
 const faqs = [
   {
@@ -38,6 +39,31 @@ export default function CestaPitanja() {
 
   return (
     <main>
+      <Head>
+        <title>Česta pitanja | Forenzička ekspertiza</title>
+        <meta
+          name="description"
+          content="Odgovori na najčešće postavljana pitanja vezana za forenzičku ekspertizu."
+        />
+        <meta
+          name="keywords"
+          content="forenzička ekspertiza, česta pitanja, stručna mišljenja, procena štete, sudski veštak"
+        />
+        <meta
+          property="og:title"
+          content="Česta pitanja | Forenzička ekspertiza"
+        />
+        <meta
+          property="og:description"
+          content="Odgovori na najčešće postavljana pitanja vezana za forenzičku ekspertizu."
+        />
+        <meta
+          property="og:url"
+          content="https://www.example.com/cesta-pitanja"
+        />
+        <meta property="og:type" content="website" />
+      </Head>
+      
       <Banner title="Česta pitanja" height="h-[50vh]" />
 
       <section className="faq-section py-8 px-4 mx-auto">

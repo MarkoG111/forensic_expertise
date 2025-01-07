@@ -1,14 +1,42 @@
 import Banner from "@/app/components/Banner";
 import Image from "next/image";
+import Head from "next/head";
 
 export default function ProcenaStete() {
   return (
     <main>
+      <Head>
+        <title>Procena nastale štete | Forenzička ekspertiza</title>
+        <meta
+          name="description"
+          content="Pružamo usluge procene nastale štete na vozilima, uključujući izradu nalaza, obračun visine štete, i vrednost vozila u sudskim postupcima."
+        />
+        <meta
+          name="keywords"
+          content="procena štete, vozila, saobraćajna nezgoda, sudski veštak, obračun štete, izrada nalaza, vozilo, totalna šteta"
+        />
+        <meta
+          property="og:title"
+          content="Procena nastale štete | Forenzička ekspertiza"
+        />
+        <meta
+          property="og:description"
+          content="Pružamo usluge procene štete na vozilima, uključujući sve aspekte saobraćajnih nezgoda i tehničke ispravnosti."
+        />
+        <meta
+          property="og:url"
+          content="https://www.example.com/procena-stete"
+        />
+        <meta property="og:type" content="website" />
+      </Head>
+
       <Banner title="Procena nastale štete" height="h-[50vh]" />
 
       <section className="py-8">
         <div className="container px-4 py-6">
-          <h2 className="text-3xl font-semibold text-gray-800 mb-6">Pregled vozila</h2>
+          <h2 className="text-3xl font-semibold text-gray-800 mb-6">
+            Pregled vozila
+          </h2>
 
           <ul className="list-disc pl-6 space-y-2 text-lg text-gray-700">
             <li>
@@ -46,10 +74,17 @@ export default function ProcenaStete() {
           </div>
 
           <div className="my-6">
-            <Image src="/crash.jpg" alt="crash" width={800} height={100} />
+            <Image
+              src="/images/crash.jpg"
+              alt="crash"
+              width={800}
+              height={100}
+            />
           </div>
 
-          <h2 className="text-3xl font-semibold text-gray-800 mt-12 mb-6">Obračun ukupne štete na vozilu</h2>
+          <h2 className="text-3xl font-semibold text-gray-800 mt-12 mb-6">
+            Obračun ukupne štete na vozilu
+          </h2>
           <p className="text-lg text-gray-700 mb-4">
             Ukoliko su troškovi opravke i eventualno umanjena vrednost vozila
             jednaki ili veći od vrednosti motornog vozila na dan nastanka štete
@@ -62,8 +97,8 @@ export default function ProcenaStete() {
             specifikaciji navedenoj u proračunu.
           </p>
           <p className="text-lg text-gray-700 mb-4">
-            Takođe po navedenoj metodologiji vrši se procena vrednosti vozila na
-            dan krađe, u slučaju procene vrednosti imovine lica iIi sličnim
+            Takođe, po navedenoj metodologiji vrši se procena vrednosti vozila
+            na dan krađe, u slučaju procene vrednosti imovine lica ili sličnim
             slučajevima. Procenu vrši sudski veštak, po posebnim zahtevima
             zainteresovanih stranaka.
           </p>

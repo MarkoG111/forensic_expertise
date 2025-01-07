@@ -72,9 +72,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
           <div className="flex items-center gap-4">
             <Image src="/logo.png" alt="logo" width={50} height={50} />
             <div>
-              <h1 className="text-2xl font-bold m-0 text-primary-alt">
-                Bratislav Igrutinović
-              </h1>
+              <h1 className="text-2xl font-bold m-0">Bratislav Igrutinović</h1>
               <p className="text-sm mt-1">Sudski veštak mašinske struke</p>
             </div>
           </div>

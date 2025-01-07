@@ -5,9 +5,9 @@ export default function ProcenaVrednostiAlata() {
     <main>
       <Banner title="Procena vrednosti alata" height="h-[50vh]" />
 
-      <section>
-        <div className="container flex">
-          <p>Detalji o proceni vrednosti alata...</p>
+      <section className="py-8">
+        <div className="container">
+          <p>Detalji o proceni vrednosti alata</p>
         </div>
       </section>
     </main>

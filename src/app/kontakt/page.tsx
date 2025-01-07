@@ -31,7 +31,7 @@ export default function Kontakt() {
   };
 
   return (
-    <main className="contact-page ">
+    <main className="contact-page">
       <Banner title="Kontakt" height="h-[50vh]" />
 
       <div className="container">

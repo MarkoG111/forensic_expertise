@@ -77,7 +77,9 @@ export default function Home() {
         <div className="container text-white flex justify-between">
           <h2 className="text-4xl">Spisak sudskih veštaka mašinske struke</h2>
           <button className="listButton">
-            <a href="/licence.pdf">Vidi Spisak</a>
+            <a href="/licence.pdf" target="_blank">
+              Vidi Spisak
+            </a>
           </button>
         </div>
       </section>
@@ -85,7 +87,7 @@ export default function Home() {
       {/* Services Section */}
       <section className="services-section mt-32">
         <div className="container">
-          <h2 className="text-4xl mb-6">Naše usluge</h2>
+          <h2 className="text-4xl mb-6 ml-2">Naše usluge</h2>
 
           <div className="services flex flex-row w-full flex-wrap">
             <div className="service w-[30%] border-2 p-8 m-4">
@@ -96,8 +98,8 @@ export default function Home() {
                   width={80}
                   height={50}
                 />
-                <h4 className="service-link">
-                  Utvrđivanje stepena oštećenja i troškova popravke
+                <h4 className="service-link mb-4">
+                  Procena nastale štete
                 </h4>
               </div>
               <div>

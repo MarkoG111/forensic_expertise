@@ -8,7 +8,7 @@
   --background: #f9f9f9;
   --primary-color: #000f2d;
   --primary-alt: #80dcfd;
-  --hover-color: #005bb5;
+  --hover-color: #007bff;
 }
 
 body {
@@ -28,6 +28,10 @@ a {
   text-decoration: none;
 }
 
+section {
+  text-align: justify;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -39,6 +43,10 @@ a {
   background-color: var(--primary-color);
 }
 
+.bg-blue-100-15 {
+  background-color: rgba(119, 207, 239, 0.15);
+}
+
 .text-primary-alt {
   color: var(--primary-alt);
 }
@@ -47,8 +55,40 @@ a {
   color: var(--hover-color);
 }
 
-.bg-blue-100-15 {
-  background-color: rgba(119, 207, 239, 0.15);
+.custom-link:hover {
+  color: var(--hover-color);
+}
+
+.listButton:hover {
+  background-color: white;
+  color: #1a1a1a;
+}
+
+.contact-page button:hover {
+  background-color: var(--hover-color);
+}
+
+.dropdown-menu li:hover a,
+.useful-links a:hover {
+  color: var(--hover-color);
+}
+
+.service:hover {
+  border-color: var(--hover-color);
+}
+
+.contact-button:hover {
+  background-color: white;
+  color: #1a1a1a;
+}
+
+.group:hover .dropdown-menu {
+  display: block;
+}
+
+.custom-link.active {
+  color: var(--hover-color);
+  border-bottom: 2px solid var(--hover-color);
 }
 
 /* Header */
@@ -96,10 +136,6 @@ nav {
   color: #007bff;
 }
 
-.custom-link:hover {
-  color: #007bff;
-}
-
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -112,10 +148,6 @@ nav {
   margin: 0;
   min-width: 340px;
   z-index: 1000;
-}
-
-.group:hover .dropdown-menu {
-  display: block;
 }
 
 .dropdown-menu li {
@@ -133,49 +165,10 @@ nav {
   border-bottom: 1px solid #b8b6b6;
 }
 
-.dropdown-menu li:hover a, .useful-links a:hover {
-  color: #007bff;
-}
-
-/* Custom link styles */
 .custom-link {
   text-decoration: none;
   padding: 0 5px;
   color: inherit;
-}
-
-.custom-link.active {
-  color: var(--hover-color);
-  border-bottom: 2px solid var(--hover-color);
-}
-
-.contact-button {
-  display: inline-block;
-  padding: 12px 32px;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: white;
-  border: 2px solid white;
-  border-radius: 4px;
-  font-size: 18px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: 20px;
-}
-
-.contact-button:hover {
-  background-color: white;
-  color: #1a1a1a;
-}
-
-.about-content p {
-  color: #636262;
-  padding: 14px 0;
-  text-align: justify;
-  line-height: 1.75;
 }
 
 /* Banner Section */
@@ -221,9 +214,33 @@ nav {
   padding-top: 18px;
 }
 
+.contact-button {
+  display: inline-block;
+  padding: 12px 32px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
 /* About Section */
 .about-section {
   margin-bottom: 40px;
+}
+
+.about-content p {
+  color: #636262;
+  padding: 14px 0;
+  text-align: justify;
+  line-height: 1.75;
 }
 
 .wrap-section {
@@ -238,11 +255,6 @@ nav {
   border: 1px solid #ccc;
   background-color: var(--primary-color);
   color: #fff;
-}
-
-.listButton:hover {
-  background-color: white;
-  color: #1a1a1a;
 }
 
 /* Services Section */
@@ -264,8 +276,19 @@ nav {
   transition: border-color 0.3s ease;
 }
 
-.service:hover {
-  border-color: #336fcf;
+/* FAQ page */
+.faq-answer {
+  height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-answer.open {
+  height: auto;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Contact page */
@@ -289,10 +312,6 @@ nav {
   border: 1px solid #ccc;
   background-color: var(--primary-color);
   color: #fff;
-}
-
-.contact-page button:hover {
-  background-color: var(--hover-color);
 }
 
 @media (max-width: 768px) {

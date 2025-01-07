@@ -3,11 +3,14 @@ import Banner from "@/app/components/Banner";
 export default function ProcenaVrednostiIndustrijskihMasina() {
   return (
     <main>
-      <Banner title="Procena vrednosti industrijskih mašina" height="h-[50vh]" />
+      <Banner
+        title="Procena vrednosti industrijskih mašina"
+        height="h-[50vh]"
+      />
 
-      <section>
-        <div className="container flex">
-          <p>Detalji o proceni vrednosti...</p>
+      <section className="py-8">
+        <div className="container">
+          <p>Detalji o proceni vrednosti industrijskih mašina</p>
         </div>
       </section>
     </main>

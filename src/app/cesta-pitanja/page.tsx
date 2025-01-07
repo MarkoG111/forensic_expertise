@@ -2,7 +2,7 @@
 
 import Banner from "@/app/components/Banner";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 const faqs = [
   {
@@ -36,12 +36,6 @@ export default function CestaPitanja() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const getHeight = (ref: React.RefObject<HTMLDivElement | null>) => {
-    return ref.current ? ref.current.scrollHeight : 0;
-  };
-
-  const answerRef = useRef<HTMLDivElement>(null);
-
   return (
     <main>
       <Banner title="Česta pitanja" height="h-[50vh]" />
@@ -67,18 +61,9 @@ export default function CestaPitanja() {
                   </span>
                 </div>
                 <div
-                  ref={answerRef}
-                  style={{
-                    height: openIndex === index ? getHeight(answerRef) : 0,
-                    opacity: openIndex === index ? 1 : 0,
-                    transform:
-                      openIndex === index
-                        ? "translateY(0)"
-                        : "translateY(-10px)",
-                    transition: "all 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
-                    overflow: "hidden",
-                  }}
-                  className="mt-2"
+                  className={`faq-answer ${
+                    openIndex === index ? "open" : ""
+                  } mt-2`}
                 >
                   <p className="text-gray-600 text-justify">{faq.answer}</p>
                 </div>

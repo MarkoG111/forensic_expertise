@@ -6,7 +6,7 @@ export default function ProcenaStete() {
     <main>
       <Banner title="Procena nastale štete" height="h-[50vh]" />
 
-      <section className="py-8 text-justify">
+      <section className="py-8">
         <div className="container px-4 py-6">
           <h2 className="text-3xl font-semibold text-gray-800 mb-6">Pregled vozila</h2>
 

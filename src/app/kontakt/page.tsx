@@ -25,9 +25,28 @@ export default function Kontakt() {
     reset,
   } = useForm<FormValues>();
 
-  const onSubmit: SubmitHandler<FormValues> = (data) => {
-    console.log("Form submitted: ", data);
-    alert("Hvala što ste nas kontaktirali. Odgovorićemo vam uskoro.");
+  const onSubmit: SubmitHandler<FormValues> = async (data) => {
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        alert("Hvala što ste nas kontaktirali. Odgovorićemo vam uskoro.");
+      } else {
+        alert(`Greška: ${result.message}`);
+      }
+    } catch (error) {
+      console.error("Greška pri slanju poruke:", error);
+      alert("Došlo je do greške prilikom slanja poruke. Pokušajte ponovo.");
+    }
+
     reset();
   };
 
@@ -122,9 +141,7 @@ export default function Kontakt() {
               } p-2 mb-4`}
             />
 
-            <button type="submit">
-              Pošalji
-            </button>
+            <button type="submit">Pošalji</button>
           </form>
 
           {/* Contact Information */}

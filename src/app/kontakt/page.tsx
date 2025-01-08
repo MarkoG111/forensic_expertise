@@ -25,26 +25,10 @@ export default function Kontakt() {
     reset,
   } = useForm<FormValues>();
 
-  const onSubmit: SubmitHandler<FormValues> = async (data) => {
-    try {
-      const response = await fetch("/api/send-email", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to send email");
-      }
-
-      alert("Hvala što ste nas kontaktirali. Odgovorićemo vam uskoro.");
-      reset();
-    } catch (error) {
-      console.error("Error: ", error);
-      alert(
-        "Došlo je do greške prilikom slanja poruke. Molimo pokušajte ponovo."
-      );
-    }
+  const onSubmit: SubmitHandler<FormValues> = (data) => {
+    console.log("Form submitted: ", data);
+    alert("Hvala što ste nas kontaktirali. Odgovorićemo vam uskoro.");
+    reset();
   };
 
   return (
@@ -129,7 +113,7 @@ export default function Kontakt() {
               {...register("message", {
                 required: "Poruka je obavezna",
                 pattern: {
-                  value: /^(\s*\S){5,}.*$/,
+                  value: /^.{5,}$/,
                   message: "Poruka mora imati minimum 5 karaktera",
                 },
               })}
@@ -138,7 +122,9 @@ export default function Kontakt() {
               } p-2 mb-4`}
             />
 
-            <button type="submit">Pošalji</button>
+            <button type="submit">
+              Pošalji
+            </button>
           </form>
 
           {/* Contact Information */}

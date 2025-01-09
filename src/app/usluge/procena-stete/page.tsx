@@ -75,10 +75,12 @@ export default function ProcenaStete() {
 
           <div className="my-6">
             <Image
-              src="/images/crash.jpg"
-              alt="crash"
+              src="/images/nastala_šteta.jpg"
+              alt="nastala šteta"
+              title="nastala šteta"
               width={800}
               height={100}
+              layout="responsive"
             />
           </div>
 

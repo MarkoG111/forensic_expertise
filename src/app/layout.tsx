@@ -71,6 +71,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
+        
         <link rel="canonical" href="https://www.example.com" />
 
         <title>{metadata.title}</title>

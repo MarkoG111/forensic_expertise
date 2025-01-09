@@ -1,0 +1,14 @@
+# Apply to all user agents
+User-agent: *
+
+# Block access to the private directory
+Disallow: /private/
+
+# Block access to TypeScript source files
+Disallow: /*.ts$
+Disallow: /*.tsx$
+
+# Allow access to the /js/ directory
+Allow: /js/
+
+Sitemap: https://www.example.com/sitemap.xml

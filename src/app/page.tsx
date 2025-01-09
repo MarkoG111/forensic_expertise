@@ -23,17 +23,17 @@ export default function Home() {
       {/* About Section */}
       <section className="about-section">
         <div className="container flex">
-          <div className="about-image content-end">
+          <div className="about-image content-end w-1/3">
             <Image
-              src="/images/bratislav.png"
-              alt="Profilna slika"
+              src="/images/bratislav_igrutinovic_sudski_vestak.png"
+              alt="Profilna slika Bratislava Igrutinovića, sudskog veštaka mašinske struke"
               width={750}
               height={450}
               title="Bratislav Igrutinović"
-              className="max-w-[400px]"
+              layout="responsive"
             />
           </div>
-          <div className="about-content ml-20">
+          <div className="about-content ml-20 w-1/2">
             <h2 className="text-4xl">
               Sudski veštak mašinske struke, <br />
               Bratislav Igrutinović
@@ -93,14 +93,13 @@ export default function Home() {
             <div className="service w-[30%] border-2 p-8 m-4">
               <div className="flex items-center">
                 <Image
-                  src="/images/accident.png"
-                  alt="accident icon"
+                  src="/images/procena_štete.png"
+                  alt="procena štete"
                   width={80}
                   height={50}
+                  layout="responsive"
                 />
-                <h4 className="service-link mb-4">
-                  Procena nastale štete
-                </h4>
+                <h4 className="service-link mb-4">Procena nastale štete</h4>
               </div>
               <div>
                 <p className="service-description">
@@ -123,12 +122,15 @@ export default function Home() {
 
             <div className="service w-[30%] border-2 p-8 m-4">
               <div className="flex items-center">
-                <Image
-                  src="/images/balance.png"
-                  alt="balance icon"
-                  width={60}
-                  height={50}
-                />
+                <div className="service-image">
+                  <Image
+                    src="/images/procena_vrednosti.png"
+                    alt="procena vrednosti"
+                    width={80}
+                    height={20}
+                    layout="responsive"
+                  />
+                </div>
                 <h4 className="service-link">
                   Procena vrednosti industrijskih mašina i opreme
                 </h4>
@@ -154,12 +156,15 @@ export default function Home() {
 
             <div className="service w-[30%] border-2 p-8 m-4">
               <div className="flex items-center">
-                <Image
-                  src="/images/production-line.png"
-                  alt="balance icon"
-                  width={60}
-                  height={50}
-                />
+                <div className="service-image">
+                  <Image
+                    src="/images/proizvodna_linija.png"
+                    alt="proizvodna linija"
+                    width={60}
+                    height={50}
+                    layout="responsive"
+                  />
+                </div>
                 <h4 className="service-link">
                   Procena vrednosti alata i proizvodnih linija
                 </h4>
@@ -185,12 +190,15 @@ export default function Home() {
 
             <div className="service w-[46%] border-2 p-8 m-4">
               <div className="flex items-center">
-                <Image
-                  src="/images/expert-opinion.png"
-                  alt="balance icon"
-                  width={60}
-                  height={50}
-                />
+                <div className="service-image">
+                  <Image
+                    src="/images/stručno_mišljenje.png"
+                    alt="stručno mišljenje"
+                    width={60}
+                    height={20}
+                    layout="responsive"
+                  />
+                </div>
                 <h4 className="service-link">
                   Izrada stručnih mišljenja za sudske procese
                 </h4>
@@ -216,12 +224,15 @@ export default function Home() {
 
             <div className="service w-[47%] border-2 p-8 m-4">
               <div className="flex items-center">
-                <Image
-                  src="/images/attorney.png"
-                  alt="balance icon"
-                  width={60}
-                  height={50}
-                />
+                <div className="service-image">
+                  <Image
+                    src="/images/konsultacije_i_saveti.png"
+                    alt="konsultacije i saveti"
+                    width={60}
+                    height={50}
+                    layout="responsive"
+                  />
+                </div>
                 <h4 className="service-link">
                   Konsultacije i saveti u vezi sa procenom mašinskih sredstava
                 </h4>

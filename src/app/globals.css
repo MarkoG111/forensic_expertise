@@ -32,6 +32,10 @@ section {
   text-align: justify;
 }
 
+.services-section {
+  text-align: start;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;

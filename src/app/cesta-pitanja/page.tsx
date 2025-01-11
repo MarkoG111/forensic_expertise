@@ -66,7 +66,7 @@ export default function CestaPitanja() {
       
       <Banner title="Česta pitanja" height="h-[50vh]" />
 
-      <section className="faq-section py-8 px-4 mx-auto">
+      <section className="faq-section py-8 px-4 mx-auto text-justify">
         <h2 className="font-bold text-center mb-6">Česta pitanja</h2>
         <div className="container">
           {faqs.map((faq, index) => {
@@ -79,9 +79,9 @@ export default function CestaPitanja() {
                   onClick={() => toggleFAQ(index)}
                   className="flex justify-between items-center cursor-pointer"
                 >
-                  <h3 className="font-medium pr-10 text-blue-700">
+                  <p className="pr-10 text-blue-700">
                     {faq.question}
-                  </h3>
+                  </p>
                   <span className="text-blue-700 ">
                     {openIndex === index ? "-" : "+"}
                   </span>

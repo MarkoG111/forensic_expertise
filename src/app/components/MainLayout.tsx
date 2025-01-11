@@ -78,22 +78,26 @@ function MobileMenu({
 
   return (
     <div
-      className={`fixed inset-0 bg-primary-color transform ${
+      className={`fixed inset-0 bg-[#000f2d] transform ${
         isOpen ? "translate-x-0" : "translate-x-full"
       } transition-transform duration-300 ease-in-out z-50`}
     >
-      <div className="flex flex-col h-full">
-        <div className="flex justify-end p-4">
-          <button onClick={onClose} className="text-white p-2">
-            ✕
-          </button>
-        </div>
-        <nav className="flex-1 px-4">
-          <ul className="space-y-4">
+      <div className="flex flex-col h-full relative">
+        {/* Close button positioned absolute in the top right */}
+        <button
+          onClick={onClose}
+          className="absolute top-6 right-6 text-white p-2 text-xl"
+          aria-label="Close menu"
+        >
+          ✕
+        </button>
+
+        <nav className="pt-8 px-6">
+          <ul className="space-y-6">
             <li>
               <Link
                 href="/"
-                className={`block text-white py-2 ${
+                className={`block text-white text-lg ${
                   pathname === "/" ? "font-bold" : ""
                 }`}
                 onClick={onClose}
@@ -104,7 +108,7 @@ function MobileMenu({
             <li>
               <button
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
-                className="flex items-center justify-between w-full text-white py-2"
+                className="flex items-center justify-between w-full text-white text-lg"
               >
                 <span>Usluge</span>
                 <span className="transform transition-transform duration-200 ease-in-out">
@@ -112,15 +116,15 @@ function MobileMenu({
                 </span>
               </button>
               <ul
-                className={`pl-4 space-y-2 overflow-hidden transition-all duration-300 ease-in-out ${
-                  isServicesOpen ? "max-h-96 mt-2" : "max-h-0"
+                className={`pl-4 space-y-4 overflow-hidden transition-all duration-300 ease-in-out ${
+                  isServicesOpen ? "max-h-96 mt-4" : "max-h-0"
                 }`}
               >
                 {services.map((service) => (
                   <li key={service.href}>
                     <Link
                       href={service.href}
-                      className="block text-white py-1"
+                      className="block text-white text-lg"
                       onClick={onClose}
                     >
                       {service.label}
@@ -132,7 +136,7 @@ function MobileMenu({
             <li>
               <Link
                 href="/cesta-pitanja"
-                className={`block text-white py-2 ${
+                className={`block text-white text-lg ${
                   pathname === "/cesta-pitanja" ? "font-bold" : ""
                 }`}
                 onClick={onClose}
@@ -143,7 +147,7 @@ function MobileMenu({
             <li>
               <Link
                 href="/kontakt"
-                className={`block text-white py-2 ${
+                className={`block text-white text-lg ${
                   pathname === "/kontakt" ? "font-bold" : ""
                 }`}
                 onClick={onClose}
@@ -195,7 +199,10 @@ export default function MainLayout({ children }: { children: ReactNode }) {
   return (
     <>
       {/* Navbar */}
-      <header className="flex justify-between items-center bg-primary-color text-primary-alt">
+      <header
+        className={`fixed top-0 left-0 w-full transition-transform duration-300 z-50 bg-primary-color text-primary-alt
+        `}
+      >
         <div className="container flex justify-between">
           <div className="flex items-center gap-4">
             <Image src="/images/logo.png" alt="logo" width={50} height={50} />
@@ -205,29 +212,25 @@ export default function MainLayout({ children }: { children: ReactNode }) {
             </div>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-4">
             <a href="tel:069/33 07 997" className="text-white">
               <FontAwesomeIcon icon={faPhone} /> 069/33 07 997
             </a>
           </div>
 
           {/* Hamburger Button */}
-          <div className="md:hidden flex justify-between items-center p-4 bg-primary-color text-primary-alt">
-            <div className="flex items-center gap-4">
-              <button
-                onClick={toggleMobileMenu}
-                className="p-2 text-white transition-transform duration-300 ease-in-out"
-                aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
-              >
-                <FontAwesomeIcon
-                  icon={isMobileMenuOpen ? faTimes : faBars}
-                  className={`w-6 h-6 transition-transform duration-300 ${
-                    isMobileMenuOpen ? "rotate-90" : "rotate-0"
-                  }`}
-                />
-              </button>
-            </div>
-          </div>
+          <button
+            onClick={toggleMobileMenu}
+            className="md:hidden fixed top-4 right-4 z-50 p-2 bg-primary-color rounded-md text-white"
+            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+          >
+            <FontAwesomeIcon
+              icon={isMobileMenuOpen ? faTimes : faBars}
+              className={`w-6 h-6 transition-transform duration-300 ${
+                isMobileMenuOpen ? "rotate-90" : "rotate-0"
+              }`}
+            />
+          </button>
         </div>
       </header>
 
@@ -288,11 +291,11 @@ export default function MainLayout({ children }: { children: ReactNode }) {
       </nav>
 
       {/* Page Content */}
-      {children}
+      <main className="mt-2 main-container">{children}</main>
 
       {/* Footer */}
-      <footer className="flex justify-between items-center p-10 bg-primary-color text-white">
-        <div className="container flex justify-between">
+      <footer className="justify-between items-center p-10 bg-primary-color text-white mt-40">
+        <div className="container flex-col md:flex-row justify-between">
           <div className="contact-footer">
             <h2 className="mb-4">Kontakt</h2>
             <ul>
@@ -316,7 +319,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
               </li>
             </ul>
           </div>
-          <div className="useful-links">
+          <div className="useful-links mt-12 md:mt-0">
             <h2 className="mb-4">Korisni Linkovi</h2>
             <ul>
               <li className="py-2">

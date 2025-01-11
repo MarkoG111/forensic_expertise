@@ -22,10 +22,10 @@ export default function Home() {
 
       {/* About Section */}
       <section className="about-section">
-        <div className="container flex">
-          <div className="about-image content-end w-1/3">
+        <div className="container lg:flex">
+          <div className="about-image w-full lg:w-1/3 mt-10 md:mt-60">
             <Image
-              src="/images/bratislav_igrutinovic_sudski_vestak.png"
+              src="/images/bratislav_igrutinovic_sudski_vestak_krug.png"
               alt="Profilna slika Bratislava Igrutinovića, sudskog veštaka mašinske struke"
               width={750}
               height={450}
@@ -33,8 +33,8 @@ export default function Home() {
               layout="responsive"
             />
           </div>
-          <div className="about-content ml-20 w-1/2">
-            <h2>
+          <div className="about-content text-center md:text-left ml-0 md:ml-20 w-full lg:w-1/2">
+            <h2 className="font-bold mb-4">
               Sudski veštak mašinske struke, <br />
               Bratislav Igrutinović
             </h2>
@@ -73,11 +73,13 @@ export default function Home() {
       </section>
 
       {/* Wrap Section */}
-      <section className="wrap-section p-14 mt-[-40px]">
-        <div className="container text-white flex justify-between">
-          <h2>Spisak sudskih veštaka mašinske struke</h2>
-          <button className="listButton">
-            <a href="/licence.pdf" target="_blank">
+      <section className="wrap-section p-6 md:p-14 mt-[-40px] bg-gray-800">
+        <div className="container text-white flex flex-col md:flex-row justify-between items-center md:items-start gap-4">
+          <h2 className="text-lg md:text-2xl font-bold text-center md:text-left">
+            Spisak sudskih veštaka mašinske struke
+          </h2>
+          <button className="list-button bg-primary hover:primary text-white px-4 py-2 text-sm md:text-base transition-all duration-200">
+            <a href="/licence.pdf" target="_blank" className="no-underline">
               Vidi Spisak
             </a>
           </button>
@@ -87,169 +89,150 @@ export default function Home() {
       {/* Services Section */}
       <section className="services-section mt-32">
         <div className="container">
-          <h2 className="mb-6 ml-2">Naše usluge</h2>
+          <h2 className="font-bold mb-6 ml-2 text-center md:text-left">
+            Naše usluge
+          </h2>
 
-          <div className="services flex flex-row w-full flex-wrap">
-            <div className="service w-[30%] border-2 p-8 m-4">
-              <div className="flex items-center">
+          <div className="services flex flex-row w-full flex-wrap justify-center md:justify-start gap-6">
+            <div className="service w-full sm:w-[47%] md:w-[30%] border-2 p-6 md:p-8 bg-white shadow-md hover:shadow-lg transition-shadow m-2">
+              <div className="flex items-center gap-4">
                 <Image
                   src="/images/procena_štete.png"
                   alt="procena štete"
-                  width={80}
-                  height={50}
-                  layout="responsive"
+                  width={60}
+                  height={60}
                 />
-                <h4 className="service-link mb-4">Procena nastale štete</h4>
+                <h4 className="service-link font-semibold">
+                  Procena nastale štete
+                </h4>
               </div>
+              <p className="service-description mt-4 text-gray-600">
+                Izrada stručnog nalaza i mišljenja - procene tržišne vrednosti
+                nastale štete na vozila, mašine, opreme i ostalih pokretnosti.
+              </p>
               <div>
-                <p className="service-description">
-                  Izrada stručnog nalaza i mišljenja - procene tržišne vrednosti
-                  nastale štete na vozila, mašine, opreme i ostalih pokretnosti.
-                </p>
-              </div>
-              <div>
-                <button className="font-bold mt-8 hover:text-blue-500 flex items-center">
+                <button className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center">
                   <Link href="/usluge/procena-stete">
                     Vidi više{" "}
                     <FontAwesomeIcon
                       icon={faArrowRight}
-                      className="ml-2 hover:text-blue-500"
+                      className="ml-2 text-primary hover:text-blue-500"
                     />
                   </Link>
                 </button>
               </div>
             </div>
 
-            <div className="service w-[30%] border-2 p-8 m-4">
-              <div className="flex items-center">
-                <div className="service-image">
-                  <Image
-                    src="/images/procena_vrednosti.png"
-                    alt="procena vrednosti"
-                    width={80}
-                    height={20}
-                    layout="responsive"
-                  />
-                </div>
-                <h4 className="service-link">
+            <div className="service w-full sm:w-[47%] md:w-[30%] border-2 p-6 md:p-8 bg-white shadow-md hover:shadow-lg transition-shadow m-2">
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/images/procena_vrednosti.png"
+                  alt="procena vrednosti"
+                  width={60}
+                  height={60}
+                />
+                <h4 className="service-link font-semibold">
                   Procena vrednosti industrijskih mašina i opreme
                 </h4>
               </div>
+              <p className="service-description mt-4 text-gray-600">
+                Izrada stručnog nalaza i mišljenja za pitanja iz oblasti
+                mašinske tehnike.
+              </p>
               <div>
-                <p className="service-description pt-5">
-                  Izrada stručnog nalaza i mišljenja za pitanja iz oblasti
-                  mašinske tehnike.
-                </p>
-              </div>
-              <div>
-                <button className="font-bold mt-8 hover:text-blue-500 flex items-center">
+                <button className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center">
                   <Link href="/usluge/procena-vrednosti-industrijskih-masina">
                     Vidi više{" "}
                     <FontAwesomeIcon
                       icon={faArrowRight}
-                      className="ml-2 hover:text-blue-500"
+                      className="ml-2 text-primary hover:text-blue-500"
                     />
                   </Link>
                 </button>
               </div>
             </div>
 
-            <div className="service w-[30%] border-2 p-8 m-4">
-              <div className="flex items-center">
-                <div className="service-image">
-                  <Image
-                    src="/images/proizvodna_linija.png"
-                    alt="proizvodna linija"
-                    width={60}
-                    height={50}
-                    layout="responsive"
-                  />
-                </div>
-                <h4 className="service-link">
+            <div className="service w-full sm:w-[47%] md:w-[30%] border-2 p-6 md:p-8 bg-white shadow-md hover:shadow-lg transition-shadow m-2">
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/images/proizvodna_linija.png"
+                  alt="proizvodna linija"
+                  width={60}
+                  height={60}
+                />
+                <h4 className="service-link font-semibold">
                   Procena vrednosti alata i proizvodnih linija
                 </h4>
               </div>
+              <p className="service-description mt-4 text-gray-600">
+                Tačno utvrdjivanje vrednosti specijalizovanih alata i kompletnih
+                proizvodnih sistema.
+              </p>
               <div>
-                <p className="service-description pt-5">
-                  Tačno utvrdjivanje vrednosti specijalizovanih alata i
-                  kompletnih proizvodnih sistema.
-                </p>
-              </div>
-              <div>
-                <button className="font-bold mt-8 hover:text-blue-500 flex items-center">
+                <button className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center">
                   <Link href="/usluge/procena-vrednosti-alata">
                     Vidi više{" "}
                     <FontAwesomeIcon
                       icon={faArrowRight}
-                      className="ml-2 hover:text-blue-500"
+                      className="ml-2 text-primary hover:text-blue-500"
                     />
                   </Link>
                 </button>
               </div>
             </div>
 
-            <div className="service w-[46%] border-2 p-8 m-4">
-              <div className="flex items-center">
-                <div className="service-image">
-                  <Image
-                    src="/images/stručno_mišljenje.png"
-                    alt="stručno mišljenje"
-                    width={60}
-                    height={20}
-                    layout="responsive"
-                  />
-                </div>
-                <h4 className="service-link">
+            <div className="service w-full sm:w-[47%] md:w-[30%] border-2 p-6 md:p-8 bg-white shadow-md hover:shadow-lg transition-shadow m-2">
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/images/stručno_mišljenje.png"
+                  alt="stručno mišljenje"
+                  width={60}
+                  height={60}
+                />
+                <h4 className="service-link font-semibold">
                   Izrada stručnih mišljenja za sudske procese
                 </h4>
               </div>
+              <p className="service-description mt-4 text-gray-600">
+                Priprema tehničkih izveštaja i mišljenja koji se koriste kao
+                dokazi u sudskim postupcima.
+              </p>
               <div>
-                <p className="service-description pt-5">
-                  Priprema tehničkih izveštaja i mišljenja koji se koriste kao
-                  dokazi u sudskim postupcima.
-                </p>
-              </div>
-              <div>
-                <button className="font-bold mt-8 hover:text-blue-500 flex items-center">
+                <button className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center">
                   <Link href="/usluge/izrada-strucnih-misljenja">
                     Vidi više{" "}
                     <FontAwesomeIcon
                       icon={faArrowRight}
-                      className="ml-2 hover:text-blue-500"
+                      className="ml-2 text-primary hover:text-blue-500"
                     />
                   </Link>
                 </button>
               </div>
             </div>
 
-            <div className="service w-[47%] border-2 p-8 m-4">
-              <div className="flex items-center">
-                <div className="service-image">
-                  <Image
-                    src="/images/konsultacije_i_saveti.png"
-                    alt="konsultacije i saveti"
-                    width={60}
-                    height={50}
-                    layout="responsive"
-                  />
-                </div>
-                <h4 className="service-link">
+            <div className="service w-full sm:w-[47%] md:w-[30%] border-2 p-6 md:p-8 bg-white shadow-md hover:shadow-lg transition-shadow m-2">
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/images/konsultacije_i_saveti.png"
+                  alt="konsultacije i saveti"
+                  width={60}
+                  height={60}
+                />
+                <h4 className="service-link font-semibold">
                   Konsultacije i saveti u vezi sa procenom mašinskih sredstava
                 </h4>
               </div>
+              <p className="service-description mt-4 text-gray-600">
+                Davanje profesionalnih preporuka i saveta vezanih za vrednovanje
+                i upravljanje mašinskom imovinom.
+              </p>
               <div>
-                <p className="service-description pt-5">
-                  Davanje profesionalnih preporuka i saveta vezanih za
-                  vrednovanje i upravljanje mašinskom imovinom.
-                </p>
-              </div>
-              <div>
-                <button className="font-bold mt-8 hover:text-blue-500 flex items-center">
+                <button className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center">
                   <Link href="/usluge/konsultacije-za-procenu-masinskih-sredstava">
                     Vidi više{" "}
                     <FontAwesomeIcon
                       icon={faArrowRight}
-                      className="ml-2 hover:text-blue-500"
+                      className="ml-2 text-primary hover:text-blue-500"
                     />
                   </Link>
                 </button>

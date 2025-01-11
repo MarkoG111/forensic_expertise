@@ -45,17 +45,17 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 nav {
   position: fixed;
   left: 0;
-  top: 50px;
+  top: 54px;
   width: 100%;
   z-index: 999;
   margin-top: 50px;
-  padding: 5px 0;
+  padding: 7px 0;
 }
 
 nav a {
@@ -154,18 +154,14 @@ nav a {
 .banner-subtitle {
   color: var(--primary-alt);
   font-style: italic;
-  font-size: 30px;
 }
 
 .banner-title {
-  font-size: 60px;
-  line-height: 1.2;
   margin: 0;
   font-weight: 700;
 }
 
 .banner-description {
-  font-size: 18px;
   padding-top: 18px;
   text-align: justify;
 }
@@ -180,7 +176,6 @@ nav a {
 .about-content p {
   color: #636262;
   padding: 14px 0;
-  line-height: 1.75;
   text-align: justify;
 }
 
@@ -197,7 +192,6 @@ nav a {
 }
 
 .service-link {
-  font-size: 25px;
   padding-left: 14px;
 }
 
@@ -271,14 +265,11 @@ nav a {
   margin-top: 20px;
 }
 
-.listButton {
+.list-button {
   transition: all 0.2s;
-  padding: 10px 20px;
-  font-size: 16px;
   cursor: pointer;
   border: 1px solid #ccc;
   background-color: var(--primary-color);
-  color: #fff;
 }
 
 /* ==========================================================================
@@ -306,7 +297,7 @@ nav a {
   color: var(--hover-color);
 }
 
-.listButton:hover,
+.list-button:hover,
 .contact-button:hover {
   background-color: white;
   color: #1a1a1a;
@@ -371,8 +362,25 @@ nav a {
       ========================================================================== */
 @media (max-width: 480px) {
   body {
-    font-size: 14px; /* Adjusted for mobile */
+    font-size: 14px;
+    overflow-x: hidden !important;
   }
+
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 16px;
+  }
+
+  .main-container {
+    margin-top: -75px;
+  }
+
   h1 {
     font-size: 24px;
     line-height: 28px;
@@ -393,11 +401,36 @@ nav a {
     font-size: 14px;
     line-height: 18px;
   }
+
+  .banner-description {
+    text-align: left;
+  }
+
+  .about-content p {
+    text-align: left;
+  }
+
+  .about-section .container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .about-content {
+    text-align: center;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   body {
-    font-size: 16px; /* Standard for small tablets */
+    font-size: 16px;
+  }
+  .main-container {
+    margin-top: -75px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
   }
   h1 {
     font-size: 28px;
@@ -423,7 +456,11 @@ nav a {
 
 @media (min-width: 769px) and (max-width: 1024px) {
   body {
-    font-size: 18px; /* Comfortable for tablets and small desktops */
+    font-size: 18px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 28px;
   }
   h1 {
     font-size: 32px;
@@ -449,7 +486,11 @@ nav a {
 
 @media (min-width: 1025px) and (max-width: 1440px) {
   body {
-    font-size: 20px; /* Suitable for desktops */
+    font-size: 20px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 32px;
   }
   h1 {
     font-size: 36px;
@@ -475,7 +516,11 @@ nav a {
 
 @media (min-width: 1441px) {
   body {
-    font-size: 22px; /* For large desktops */
+    font-size: 22px;
+  }
+  p {
+    font-size: 21px;
+    line-height: 36px;
   }
   h1 {
     font-size: 40px;

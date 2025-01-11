@@ -10,7 +10,14 @@ export default {
     extend: {
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
+        foreground: "var(--foreground)"
+      },
+      screens: {
+        sm: "480px", // Mobile
+        md: "768px", // Tablets
+        lg: "1024px", // Laptops/Small Desktops
+        xl: "1440px", // Larger Desktops
+        "2xl": "1920px", // Very Large Screens
       },
     },
   },

@@ -295,7 +295,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
 
       {/* Footer */}
       <footer className="justify-between items-center p-10 bg-primary-color text-white mt-40">
-        <div className="container flex-col md:flex-row justify-between">
+        <div className="container lg:flex justify-between">
           <div className="contact-footer">
             <h2 className="mb-4">Kontakt</h2>
             <ul>

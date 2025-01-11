@@ -67,7 +67,7 @@ export default function CestaPitanja() {
       <Banner title="Česta pitanja" height="h-[50vh]" />
 
       <section className="faq-section py-8 px-4 mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-6">Česta pitanja</h2>
+        <h2 className="font-bold text-center mb-6">Česta pitanja</h2>
         <div className="container">
           {faqs.map((faq, index) => {
             return (
@@ -79,10 +79,10 @@ export default function CestaPitanja() {
                   onClick={() => toggleFAQ(index)}
                   className="flex justify-between items-center cursor-pointer"
                 >
-                  <h3 className="font-medium text-lg text-justify pr-10 text-blue-700">
+                  <h3 className="font-medium pr-10 text-blue-700">
                     {faq.question}
                   </h3>
-                  <span className="text-blue-700 text-3xl">
+                  <span className="text-blue-700 ">
                     {openIndex === index ? "-" : "+"}
                   </span>
                 </div>
@@ -91,14 +91,14 @@ export default function CestaPitanja() {
                     openIndex === index ? "open" : ""
                   } mt-2`}
                 >
-                  <p className="text-gray-600 text-justify">{faq.answer}</p>
+                  <p className="text-gray-600">{faq.answer}</p>
                 </div>
               </div>
             );
           })}
 
           <div className="text-center my-20">
-            <h2 className="font-medium text-3xl my-14">
+            <h2 className="font-medium  my-14">
               Imate dodatnih pitanja?
             </h2>
             <Link

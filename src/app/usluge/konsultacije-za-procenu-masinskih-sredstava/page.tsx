@@ -38,12 +38,12 @@ export default function KonsultacijaZaProcenuMasinskihSredstava() {
 
       <section className="py-8">
         <div className="container">
-          <p className="text-lg text-gray-700">
+          <p className="text-gray-700">
             Pružamo profesionalne konsultacije za procenu mašinskih sredstava,
             uključujući analizu vrednosti, tehničkog stanja i mogućnosti daljeg
             korišćenja.
           </p>
-          <p className="text-lg text-gray-700 mt-4">
+          <p className="text-gray-700 mt-4">
             Naša stručnost u oblasti procene mašinskih sredstava obuhvata širok
             spektar industrijskih oprema, uključujući mašine za proizvodnju,
             poljoprivrednu opremu, i transportne sisteme.

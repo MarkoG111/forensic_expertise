@@ -71,7 +71,7 @@ export default function Kontakt() {
         <meta property="og:type" content="website" />
       </Head>
 
-      <Banner title="Kontaktirajte nas" height="h-[50vh]" />
+      <Banner title="Kontakt" height="h-[50vh]" />
 
       <div className="container">
         <div className="flex justify-between my-24 flex-wrap gap-10">
@@ -145,7 +145,7 @@ export default function Kontakt() {
           </form>
 
           {/* Contact Information */}
-          <div className="sidebar text-lg">
+          <div className="sidebar">
             <ul>
               <li className="flex items-center gap-4 py-4">
                 <FontAwesomeIcon icon={faMapMarked} size="2xl" />

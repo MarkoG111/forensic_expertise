@@ -39,14 +39,14 @@ export default function ProcenaVrednostiIndustrijskihMasina() {
 
       <section className="py-8">
         <div className="container">
-          <h2 className="text-2xl font-bold mb-4">Procena vrednosti industrijskih mašina</h2>
-          <p className="text-justify mb-4">
+          <h2 className="font-bold mb-4">Procena vrednosti industrijskih mašina</h2>
+          <p className="mb-4">
             Procena vrednosti industrijskih mašina i opreme je ključni korak za određivanje njihove stvarne tržišne vrednosti. Ova usluga je neophodna za različite situacije, kao što su osiguranje, prodaja, kupovina, ili sudski postupci.
           </p>
-          <p className="text-justify mb-4">
+          <p className="mb-4">
             Kao sudski veštak za mehaniku, pružam profesionalne usluge procene vrednosti industrijskih mašina i opreme, koristeći iskustvo i najviše standarde stručnosti. Uzimam u obzir sve relevantne faktore, uključujući starost, stanje, i aktuelne tržišne uslove.
           </p>
-          <p className="text-justify">
+          <p>
             Bez obzira na potrebu – bilo da se radi o pripremi za osiguranje, proceni u slučaju štete, ili pravnim procesima – pružam tačne i pouzdane procene koje su u skladu sa važećim zakonskim i stručnim standardima.
           </p>
         </div>

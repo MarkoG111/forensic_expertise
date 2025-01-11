@@ -33,12 +33,12 @@ export default function ProcenaVrednostiAlata() {
 
       <section className="py-8">
         <div className="container">
-          <p className="text-lg text-gray-700">
+          <p className="text-gray-700">
             Naša usluga procene vrednosti alata obuhvata sve vrste industrijskih
             i profesionalnih alata. Pomažemo u analizi tržišne vrednosti i
             tehničkog stanja alata.
           </p>
-          <p className="text-lg text-gray-700 mt-4">
+          <p className="text-gray-700 mt-4">
             Bilo da se radi o proceni starijih alata ili novijih modela, naši
             stručnjaci koriste specijalizovane metode kako bi osigurali tačnu
             vrednost, uzimajući u obzir sve faktore koji utiču na tržište.

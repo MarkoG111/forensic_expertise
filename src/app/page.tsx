@@ -34,7 +34,7 @@ export default function Home() {
             />
           </div>
           <div className="about-content ml-20 w-1/2">
-            <h2 className="text-4xl">
+            <h2>
               Sudski veštak mašinske struke, <br />
               Bratislav Igrutinović
             </h2>
@@ -75,7 +75,7 @@ export default function Home() {
       {/* Wrap Section */}
       <section className="wrap-section p-14 mt-[-40px]">
         <div className="container text-white flex justify-between">
-          <h2 className="text-4xl">Spisak sudskih veštaka mašinske struke</h2>
+          <h2>Spisak sudskih veštaka mašinske struke</h2>
           <button className="listButton">
             <a href="/licence.pdf" target="_blank">
               Vidi Spisak
@@ -87,7 +87,7 @@ export default function Home() {
       {/* Services Section */}
       <section className="services-section mt-32">
         <div className="container">
-          <h2 className="text-4xl mb-6 ml-2">Naše usluge</h2>
+          <h2 className="mb-6 ml-2">Naše usluge</h2>
 
           <div className="services flex flex-row w-full flex-wrap">
             <div className="service w-[30%] border-2 p-8 m-4">

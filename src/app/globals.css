@@ -83,6 +83,10 @@ nav a {
   color: #333;
 }
 
+.mobile-logo {
+  color: var(--primary-alt);
+}
+
 /* Navigation Links */
 .custom-link {
   position: relative;

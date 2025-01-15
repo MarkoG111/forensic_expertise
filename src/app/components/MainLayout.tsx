@@ -83,6 +83,14 @@ function MobileMenu({
       } transition-transform duration-300 ease-in-out z-50`}
     >
       <div className="flex flex-col h-full relative">
+        <div className="flex items-center gap-4 pl-5 mobile-logo">
+          <Image src="/images/logo.png" alt="logo" width={50} height={30} />
+          <div className="mt-6">
+            <h2 className="font-bold m-0">Bratislav Igrutinović</h2>
+            <p className="mt-1">Sudski veštak mašinske struke</p>
+          </div>
+        </div>
+
         {/* Close button positioned absolute in the top right */}
         <button
           onClick={onClose}
@@ -92,7 +100,9 @@ function MobileMenu({
           ✕
         </button>
 
-        <nav className="pt-8 px-6">
+        <hr />
+
+        <nav className="px-6">
           <ul className="space-y-6">
             <li>
               <Link

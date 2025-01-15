@@ -66,7 +66,7 @@ export default function CestaPitanja() {
       
       <Banner title="Česta pitanja" height="h-[50vh]" />
 
-      <section className="faq-section py-8 px-4 mx-auto text-justify">
+      <section className="faq-section py-8 px-4 mx-auto">
         <h2 className="font-bold text-center mb-6">Česta pitanja</h2>
         <div className="container">
           {faqs.map((faq, index) => {

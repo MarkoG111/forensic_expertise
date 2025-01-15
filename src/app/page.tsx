@@ -7,7 +7,7 @@ import Banner from "./components/Banner";
 export default function Home() {
   return (
     <main>
-      {/* Banner Section */}
+    {/* Banner Section */}
       <Banner
         title="Sudski veštak mašinske struke"
         subtitle="Bratislav Igrutinović"
@@ -23,17 +23,8 @@ export default function Home() {
       {/* About Section */}
       <section className="about-section">
         <div className="container lg:flex">
-          <div className="about-image w-full lg:w-1/3 mt-10 md:mt-60">
-            <Image
-              src="/images/bratislav_igrutinovic_sudski_vestak_krug.png"
-              alt="Profilna slika Bratislava Igrutinovića, sudskog veštaka mašinske struke"
-              width={750}
-              height={450}
-              title="Bratislav Igrutinović"
-              layout="responsive"
-            />
-          </div>
-          <div className="about-content text-center md:text-left ml-0 md:ml-20 w-full lg:w-1/2">
+          {/* Text Content */}
+          <div className="about-content text-center md:text-left w-full lg:w-1/2">
             <h2 className="font-bold mb-4">
               Sudski veštak mašinske struke, <br />
               Bratislav Igrutinović
@@ -68,6 +59,31 @@ export default function Home() {
               moje ekspertno mišljenje kako bi osigurali pravičnu i tačnu
               procenu vrednosti pokretnih dobara koje koriste kao kolateral.
             </p>
+          </div>
+
+          {/* Image */}
+          <div className="about-image w-full lg:w-1/3 mt-10 md:mt-60 lg:mt-0 lg:ml-14">
+            <picture>
+              {/* Default image for screens larger than 1024px */}
+              <source
+                srcSet="/images/bratislav_igrutinovic_sudski_vestak_krug.png"
+                media="(min-width: 1024px)"
+              />
+              {/* Image for screens smaller than 1024px */}
+              <source
+                srcSet="/images/bratislav_igrutinovic_sudski_vestak.png"
+                media="(max-width: 1023px)"
+              />
+              {/* Fallback image for unsupported browsers */}
+              <Image
+                src="/images/bratislav_igrutinovic_sudski_vestak_krug.png" // Default image for browsers that don't support `picture`
+                alt="Profilna slika Bratislava Igrutinovića, sudskog veštaka mašinske struke"
+                width={750}
+                height={450}
+                title="Bratislav Igrutinović"
+                layout="responsive"
+              />
+            </picture>
           </div>
         </div>
       </section>

@@ -40,22 +40,22 @@ export default function CestaPitanja() {
   return (
     <main>
       <Head>
-        <title>Česta pitanja | Forenzička ekspertiza</title>
+        <title>Česta pitanja | Mašinski veštak</title>
         <meta
           name="description"
-          content="Odgovori na najčešće postavljana pitanja vezana za forenzičku ekspertizu."
+          content="Odgovori na najčešće postavljana pitanja vezana za mašinskog veštaka."
         />
         <meta
           name="keywords"
-          content="forenzička ekspertiza, česta pitanja, stručna mišljenja, procena štete, sudski veštak"
+          content="mašinski veštak, česta pitanja, stručna mišljenja, procena štete, sudski veštak"
         />
         <meta
           property="og:title"
-          content="Česta pitanja | Forenzička ekspertiza"
+          content="Česta pitanja | Mašinski veštak"
         />
         <meta
           property="og:description"
-          content="Odgovori na najčešće postavljana pitanja vezana za forenzičku ekspertizu."
+          content="Odgovori na najčešće postavljana pitanja vezana za sudkog mašinskog veštaka."
         />
         <meta
           property="og:url"

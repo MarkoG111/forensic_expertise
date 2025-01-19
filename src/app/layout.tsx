@@ -3,33 +3,33 @@ import MainLayout from "./components/MainLayout";
 import "./globals.css";
 
 export const metadata = {
-  title: "Forenzička ekspertiza | Portfolio sudskog veštaka za mehaniku",
+  title: "Маšinski veštak | Portfolio sudskog mašinskog veštaka",
   description:
     "Portfolio i prezentacija sudskog veštaka za mehaniku. Saznajte više o uslugama procene štete, procene vrednosti, i stručnih mišljenja.",
   keywords:
-    "forenzička ekspertiza, sudski veštak, procena štete, procena vrednosti, stručna mišljenja, portfolio sudskog veštaka, mehanička ekspertiza",
-  authors: [{ name: "Forenzička ekspertiza", url: "https://www.masinskivestak.rs" }],
+    "mašinski veštak, sudski veštak, procena štete, procena vrednosti, stručna mišljenja, portfolio sudskog veštaka, mehanička ekspertiza",
+  authors: [{ name: "Bratislav Igrutinović", url: "https://www.masinskivestak.rs" }],
   robots: "index, follow",
   openGraph: {
-    title: "Forenzička ekspertiza | Portfolio sudskog veštaka za mehaniku",
+    title: "Mašinski veštak | Portfolio sudskog mašinskog veštaka",
     description:
       "Prezentacija sudskog veštaka za mehaniku, sa uslugama procene štete, procene vrednosti, i izrade stručnih mišljenja.",
     url: "https://www.masinskivestak.rs",
     type: "website",
     locale: "sr_RS",
-    siteName: "Forenzička ekspertiza",
+    siteName: "Mašinski veštak",
     images: [
       {
         url: "https://www.masinskivestak.rs/images/baner.png",
         width: 1200,
         height: 630,
-        alt: "Forenzička ekspertiza banner image",
+        alt: "Mašinsko veštačenje banner image",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Forenzička ekspertiza | Portfolio sudskog veštaka za mehaniku",
+    title: "Mašinski veštak | Portfolio sudskog mašinskog veštaka",
     description:
       "Saznajte više o stručnim uslugama procene štete i vrednosti koje pruža sudski veštak za mehaniku.",
     images: ["https://www.masinskivestak.rs/images/baner.png"],

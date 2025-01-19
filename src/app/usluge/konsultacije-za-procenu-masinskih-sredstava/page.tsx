@@ -6,7 +6,7 @@ export default function KonsultacijaZaProcenuMasinskihSredstava() {
     <main>
       <Head>
         <title>
-          Konsultacija za procenu mašinskih sredstava | Forenzička ekspertiza
+          Konsultacija za procenu mašinskih sredstava | Mašinski veštak
         </title>
         <meta
           name="description"
@@ -18,7 +18,7 @@ export default function KonsultacijaZaProcenuMasinskihSredstava() {
         />
         <meta
           property="og:title"
-          content="Konsultacija za procenu mašinskih sredstava | Forenzička ekspertiza"
+          content="Konsultacija za procenu mašinskih sredstava | Mašinski veštak"
         />
         <meta
           property="og:description"

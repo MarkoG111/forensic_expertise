@@ -5,18 +5,18 @@ export default function ProcenaVrednostiIndustrijskihMasina() {
   return (
     <main>
       <Head>
-        <title>Procena vrednosti industrijskih mašina | Forenzička ekspertiza</title>
+        <title>Procena vrednosti industrijskih mašina | Mašinski veštak</title>
         <meta
           name="description"
           content="Procena vrednosti industrijskih mašina i opreme od strane sudskog veštaka za mehaniku. Stručno i profesionalno procenjujemo vrednost industrijskih mašina za potrebe osiguranja, prodaje, ili sudskih postupaka."
         />
         <meta
           name="keywords"
-          content="procena vrednosti, industrijske mašine, sudski veštak, forenzička ekspertiza, procena opreme, industrijska oprema, procena štete"
+          content="procena vrednosti, industrijske mašine, sudski veštak, mašinski veštak, procena opreme, industrijska oprema, procena štete"
         />
         <meta
           property="og:title"
-          content="Procena vrednosti industrijskih mašina | Forenzička ekspertiza"
+          content="Procena vrednosti industrijskih mašina | Mašinski veštak"
         />
         <meta
           property="og:description"

@@ -53,16 +53,16 @@ export default function Kontakt() {
   return (
     <main className="contact-page">
       <Head>
-        <title>Kontakt | Forenzička ekspertiza</title>
+        <title>Kontakt | Mašinski veštak</title>
         <meta
           name="description"
-          content="Kontaktirajte forenzičkog eksperta za mehaniku radi dodatnih informacija o proceni štete, proceni vrednosti industrijskih mašina, ili izradi stručnih mišljenja."
+          content="Kontaktirajte sudskog, mašinskog eksperta za mehaniku radi dodatnih informacija o proceni štete, proceni vrednosti industrijskih mašina, ili izradi stručnih mišljenja."
         />
         <meta
           name="keywords"
-          content="forenzička ekspertiza, kontakt, sudski veštak, procena štete, procena vrednosti, stručna mišljenja"
+          content="mašinski veštak, kontakt, sudski veštak, procena štete, procena vrednosti, stručna mišljenja"
         />
-        <meta property="og:title" content="Kontakt | Forenzička ekspertiza" />
+        <meta property="og:title" content="Kontakt | Mašinski veštak" />
         <meta
           property="og:description"
           content="Kontaktirajte nas za profesionalne usluge sudskog veštaka za mehaniku."

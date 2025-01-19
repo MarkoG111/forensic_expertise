@@ -6,7 +6,7 @@ export default function ProcenaStete() {
   return (
     <main>
       <Head>
-        <title>Procena nastale štete | Forenzička ekspertiza</title>
+        <title>Procena nastale štete | Mašinski veštak</title>
         <meta
           name="description"
           content="Pružamo usluge procene nastale štete na vozilima, uključujući izradu nalaza, obračun visine štete, i vrednost vozila u sudskim postupcima."
@@ -17,7 +17,7 @@ export default function ProcenaStete() {
         />
         <meta
           property="og:title"
-          content="Procena nastale štete | Forenzička ekspertiza"
+          content="Procena nastale štete | Mašinski veštak"
         />
         <meta
           property="og:description"

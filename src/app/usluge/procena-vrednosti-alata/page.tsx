@@ -5,7 +5,7 @@ export default function ProcenaVrednostiAlata() {
   return (
     <main>
       <Head>
-        <title>Procena vrednosti alata | Forenzička ekspertiza</title>
+        <title>Procena vrednosti alata | Mašinski veštak</title>
         <meta
           name="description"
           content="Pružamo usluge procene vrednosti alata za različite industrije i namene, uključujući analizu stanja i tržišne vrednosti."
@@ -16,7 +16,7 @@ export default function ProcenaVrednostiAlata() {
         />
         <meta
           property="og:title"
-          content="Procena vrednosti alata | Forenzička ekspertiza"
+          content="Procena vrednosti alata | Mašinski veštak"
         />
         <meta
           property="og:description"

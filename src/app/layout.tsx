@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import MainLayout from "./components/MainLayout";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: "Маšinski veštak | Portfolio sudskog mašinskog veštaka",
@@ -8,7 +9,9 @@ export const metadata = {
     "Portfolio i prezentacija sudskog veštaka za mehaniku. Saznajte više o uslugama procene štete, procene vrednosti, i stručnih mišljenja.",
   keywords:
     "mašinski veštak, sudski veštak, procena štete, procena vrednosti, stručna mišljenja, portfolio sudskog veštaka, mehanička ekspertiza",
-  authors: [{ name: "Bratislav Igrutinović", url: "https://www.masinskivestak.rs" }],
+  authors: [
+    { name: "Bratislav Igrutinović", url: "https://www.masinskivestak.rs" },
+  ],
   robots: "index, follow",
   openGraph: {
     title: "Mašinski veštak | Portfolio sudskog mašinskog veštaka",
@@ -71,13 +74,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
-        
+
         <link rel="canonical" href="https://www.masinskivestak.rs" />
 
         <title>{metadata.title}</title>
       </head>
       <body>
         <MainLayout>{children}</MainLayout>
+        <SpeedInsights />
       </body>
     </html>
   );

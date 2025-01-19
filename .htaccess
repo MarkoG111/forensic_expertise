@@ -1,0 +1,7 @@
+# Allow all users and bots to access robots.txt and sitemap.xml
+<FilesMatch "^(robots\.txt|sitemap\.xml)$">
+    Require all granted
+</FilesMatch>
+
+# If needed, enable mod_rewrite for URL routing
+RewriteEngine On

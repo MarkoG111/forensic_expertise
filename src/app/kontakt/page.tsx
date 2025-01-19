@@ -150,20 +150,16 @@ export default function Kontakt() {
               <li className="flex items-center gap-4 py-4">
                 <FontAwesomeIcon icon={faMapMarked} size="2xl" />
                 <span>
-                  Vuka Karadžića 115, <br /> 32300 Gornji Milanovac
+                  Vuka Karadžića 94, <br /> 32300 Gornji Milanovac
                 </span>
               </li>
               <li className="flex items-center gap-4 py-4">
                 <FontAwesomeIcon icon={faPhone} size="2xl" />
-                <span>064/44 22 212</span>
-              </li>
-              <li className="flex items-center gap-4 py-4">
-                <FontAwesomeIcon icon={faPhone} size="2xl" />
-                <span>066/99 30 186</span>
+                <span>064/15 69 293</span>
               </li>
               <li className="flex items-center py-4">
                 <FontAwesomeIcon icon={faEnvelope} size="2xl" />
-                <span className="pl-4">bratislav.igrutinovic@gmail.com</span>
+                <span className="pl-4">milenijum.gm@mts.rs</span>
               </li>
             </ul>
           </div>

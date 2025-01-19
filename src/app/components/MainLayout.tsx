@@ -224,7 +224,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
 
           <div className="hidden md:flex items-center gap-4">
             <a href="tel:069/33 07 997" className="text-white">
-              <FontAwesomeIcon icon={faPhone} /> 069/33 07 997
+              <FontAwesomeIcon icon={faPhone} /> 064/15 69 293
             </a>
           </div>
 
@@ -311,15 +311,11 @@ export default function MainLayout({ children }: { children: ReactNode }) {
             <ul>
               <li className="flex items-center gap-4 py-2">
                 <FontAwesomeIcon icon={faMapMarked} />
-                <span>Vuka Karadžića 115, 32300 Gornji Milanovac</span>
+                <span>Vuka Karadžića 94, 32300 Gornji Milanovac</span>
               </li>
               <li className="flex items-center gap-4 py-2">
                 <FontAwesomeIcon icon={faPhone} />
-                <span>064/44 22 212</span>
-              </li>
-              <li className="flex items-center gap-4 py-2">
-                <FontAwesomeIcon icon={faPhone} />
-                <span>066/99 30 186</span>
+                <span>064/15 69 293</span>
               </li>
               <li className="flex items-center py-2">
                 <a href="" className="hover:text-blue-500">

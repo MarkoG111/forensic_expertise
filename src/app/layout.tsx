@@ -8,19 +8,19 @@ export const metadata = {
     "Portfolio i prezentacija sudskog veštaka za mehaniku. Saznajte više o uslugama procene štete, procene vrednosti, i stručnih mišljenja.",
   keywords:
     "forenzička ekspertiza, sudski veštak, procena štete, procena vrednosti, stručna mišljenja, portfolio sudskog veštaka, mehanička ekspertiza",
-  authors: [{ name: "Forenzička ekspertiza", url: "https://www.example.com" }],
+  authors: [{ name: "Forenzička ekspertiza", url: "https://www.masinskivestak.rs" }],
   robots: "index, follow",
   openGraph: {
     title: "Forenzička ekspertiza | Portfolio sudskog veštaka za mehaniku",
     description:
       "Prezentacija sudskog veštaka za mehaniku, sa uslugama procene štete, procene vrednosti, i izrade stručnih mišljenja.",
-    url: "https://www.example.com",
+    url: "https://www.masinskivestak.rs",
     type: "website",
     locale: "sr_RS",
     siteName: "Forenzička ekspertiza",
     images: [
       {
-        url: "https://www.example.com/images/baner.png",
+        url: "https://www.masinskivestak.rs/images/baner.png",
         width: 1200,
         height: 630,
         alt: "Forenzička ekspertiza banner image",
@@ -32,7 +32,7 @@ export const metadata = {
     title: "Forenzička ekspertiza | Portfolio sudskog veštaka za mehaniku",
     description:
       "Saznajte više o stručnim uslugama procene štete i vrednosti koje pruža sudski veštak za mehaniku.",
-    images: ["https://www.example.com/images/baner.png"],
+    images: ["https://www.masinskivestak.rs/images/baner.png"],
   },
 };
 
@@ -72,7 +72,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
         
-        <link rel="canonical" href="https://www.example.com" />
+        <link rel="canonical" href="https://www.masinskivestak.rs" />
 
         <title>{metadata.title}</title>
       </head>

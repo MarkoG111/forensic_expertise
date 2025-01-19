@@ -59,7 +59,7 @@ export default function CestaPitanja() {
         />
         <meta
           property="og:url"
-          content="https://www.example.com/cesta-pitanja"
+          content="https://www.masinskivestak.rs/cesta-pitanja"
         />
         <meta property="og:type" content="website" />
       </Head>

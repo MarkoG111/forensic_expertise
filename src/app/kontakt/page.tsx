@@ -67,7 +67,7 @@ export default function Kontakt() {
           property="og:description"
           content="Kontaktirajte nas za profesionalne usluge sudskog veštaka za mehaniku."
         />
-        <meta property="og:url" content="https://www.example.com/kontakt" />
+        <meta property="og:url" content="https://www.masinskivestak.rs/kontakt" />
         <meta property="og:type" content="website" />
       </Head>
 

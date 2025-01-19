@@ -24,7 +24,7 @@ export default function ProcenaVrednostiAlata() {
         />
         <meta
           property="og:url"
-          content="https://www.example.com/procena-vrednosti-alata"
+          content="https://www.masinskivestak.rs/procena-vrednosti-alata"
         />
         <meta property="og:type" content="website" />
       </Head>

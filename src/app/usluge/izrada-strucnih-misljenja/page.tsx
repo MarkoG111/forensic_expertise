@@ -24,11 +24,11 @@ export default function IzradaStrucnihMisljenja() {
         />
         <meta
           property="og:url"
-          content="https://www.example.com/usluge/izrada-strucnih-misljenja"
+          content="https://www.masinskivestak.rs/usluge/izrada-strucnih-misljenja"
         />
         <meta
           property="og:image"
-          content="https://www.example.com/images/banner-izrada-strucnih-misljenja.jpg"
+          content="https://www.masinskivestak.rs/images/banner-izrada-strucnih-misljenja.jpg"
         />
         <meta property="og:type" content="website" />
       </Head>

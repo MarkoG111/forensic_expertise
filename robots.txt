@@ -11,4 +11,4 @@ Disallow: /*.tsx$
 # Allow access to the /js/ directory
 Allow: /js/
 
-Sitemap: https://www.example.com/sitemap.xml
+Sitemap: https://www.masinskivestak.rs/sitemap.xml

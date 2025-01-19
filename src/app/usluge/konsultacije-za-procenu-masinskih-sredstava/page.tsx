@@ -26,7 +26,7 @@ export default function KonsultacijaZaProcenuMasinskihSredstava() {
         />
         <meta
           property="og:url"
-          content="https://www.example.com/konsultacija-za-procenu-masinskih-sredstava"
+          content="https://www.masinskivestak.rs/konsultacija-za-procenu-masinskih-sredstava"
         />
         <meta property="og:type" content="website" />
       </Head>

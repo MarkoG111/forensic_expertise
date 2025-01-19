@@ -24,7 +24,7 @@ export default function ProcenaVrednostiIndustrijskihMasina() {
         />
         <meta
           property="og:url"
-          content="https://www.example.com/procena-vrednosti-industrijskih-masina"
+          content="https://www.masinskivestak.rs/procena-vrednosti-industrijskih-masina"
         />
         <meta
           property="og:type"

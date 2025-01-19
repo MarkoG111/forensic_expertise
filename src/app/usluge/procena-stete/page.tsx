@@ -25,7 +25,7 @@ export default function ProcenaStete() {
         />
         <meta
           property="og:url"
-          content="https://www.example.com/procena-stete"
+          content="https://www.masinskivestak.rs/procena-stete"
         />
         <meta property="og:type" content="website" />
       </Head>

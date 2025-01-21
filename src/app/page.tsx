@@ -6,8 +6,8 @@ import Banner from "./components/Banner";
 
 export default function Home() {
   return (
-    <main>
-    {/* Banner Section */}
+    <div>
+      {/* Banner Section */}
       <Banner
         title="Sudski veštak mašinske struke"
         subtitle="Bratislav Igrutinović"
@@ -81,7 +81,7 @@ export default function Home() {
                 width={750}
                 height={450}
                 title="Bratislav Igrutinović"
-                layout="responsive"
+                layout="intrinsic"
               />
             </picture>
           </div>
@@ -94,11 +94,11 @@ export default function Home() {
           <h2 className="text-lg md:text-2xl font-bold text-center md:text-left">
             Spisak sudskih veštaka mašinske struke
           </h2>
-          <button className="list-button bg-primary hover:primary text-white px-4 py-2 text-sm md:text-base transition-all duration-200">
-            <a href="/licence.pdf" target="_blank" className="no-underline">
+          <a href="/licence.pdf" target="_blank" className="no-underline">
+            <button className="list-button bg-primary hover:primary text-white px-4 py-2 text-sm md:text-base transition-all duration-200">
               Vidi Spisak
-            </a>
-          </button>
+            </button>
+          </a>
         </div>
       </section>
 
@@ -118,24 +118,24 @@ export default function Home() {
                   width={60}
                   height={60}
                 />
-                <h4 className="service-link font-semibold">
+                <h3 className="service-link font-semibold">
                   Procena nastale štete
-                </h4>
+                </h3>
               </div>
               <p className="service-description mt-4 text-gray-600">
                 Izrada stručnog nalaza i mišljenja - procene tržišne vrednosti
                 nastale štete na vozila, mašine, opreme i ostalih pokretnosti.
               </p>
               <div>
-                <button className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center">
-                  <Link href="/usluge/procena-stete">
+                <Link href="/usluge/procena-stete">
+                  <button className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center">
                     Vidi više{" "}
                     <FontAwesomeIcon
                       icon={faArrowRight}
                       className="ml-2 text-primary hover:text-blue-500"
                     />
-                  </Link>
-                </button>
+                  </button>
+                </Link>
               </div>
             </div>
 
@@ -147,24 +147,24 @@ export default function Home() {
                   width={60}
                   height={60}
                 />
-                <h4 className="service-link font-semibold">
+                <h3 className="service-link font-semibold">
                   Procena vrednosti industrijskih mašina i opreme
-                </h4>
+                </h3>
               </div>
               <p className="service-description mt-4 text-gray-600">
                 Izrada stručnog nalaza i mišljenja za pitanja iz oblasti
                 mašinske tehnike.
               </p>
               <div>
-                <button className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center">
-                  <Link href="/usluge/procena-vrednosti-industrijskih-masina">
+                <Link href="/usluge/procena-vrednosti-industrijskih-masina">
+                  <button className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center">
                     Vidi više{" "}
                     <FontAwesomeIcon
                       icon={faArrowRight}
                       className="ml-2 text-primary hover:text-blue-500"
                     />
-                  </Link>
-                </button>
+                  </button>
+                </Link>
               </div>
             </div>
 
@@ -176,24 +176,24 @@ export default function Home() {
                   width={60}
                   height={60}
                 />
-                <h4 className="service-link font-semibold">
+                <h3 className="service-link font-semibold">
                   Procena vrednosti alata i proizvodnih linija
-                </h4>
+                </h3>
               </div>
               <p className="service-description mt-4 text-gray-600">
                 Tačno utvrdjivanje vrednosti specijalizovanih alata i kompletnih
                 proizvodnih sistema.
               </p>
               <div>
-                <button className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center">
-                  <Link href="/usluge/procena-vrednosti-alata">
+                <Link href="/usluge/procena-vrednosti-alata">
+                  <button className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center">
                     Vidi više{" "}
                     <FontAwesomeIcon
                       icon={faArrowRight}
                       className="ml-2 text-primary hover:text-blue-500"
                     />
-                  </Link>
-                </button>
+                  </button>
+                </Link>
               </div>
             </div>
 
@@ -205,24 +205,24 @@ export default function Home() {
                   width={60}
                   height={60}
                 />
-                <h4 className="service-link font-semibold">
+                <h3 className="service-link font-semibold">
                   Izrada stručnih mišljenja za sudske procese
-                </h4>
+                </h3>
               </div>
               <p className="service-description mt-4 text-gray-600">
                 Priprema tehničkih izveštaja i mišljenja koji se koriste kao
                 dokazi u sudskim postupcima.
               </p>
               <div>
-                <button className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center">
-                  <Link href="/usluge/izrada-strucnih-misljenja">
+                <Link href="/usluge/izrada-strucnih-misljenja">
+                  <button className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center">
                     Vidi više{" "}
                     <FontAwesomeIcon
                       icon={faArrowRight}
                       className="ml-2 text-primary hover:text-blue-500"
                     />
-                  </Link>
-                </button>
+                  </button>
+                </Link>
               </div>
             </div>
 
@@ -234,29 +234,29 @@ export default function Home() {
                   width={60}
                   height={60}
                 />
-                <h4 className="service-link font-semibold">
+                <h3 className="service-link font-semibold">
                   Konsultacije i saveti u vezi sa procenom mašinskih sredstava
-                </h4>
+                </h3>
               </div>
               <p className="service-description mt-4 text-gray-600">
                 Davanje profesionalnih preporuka i saveta vezanih za vrednovanje
                 i upravljanje mašinskom imovinom.
               </p>
               <div>
-                <button className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center">
-                  <Link href="/usluge/konsultacije-za-procenu-masinskih-sredstava">
+                <Link href="/usluge/konsultacije-za-procenu-masinskih-sredstava">
+                  <button className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center">
                     Vidi više{" "}
                     <FontAwesomeIcon
                       icon={faArrowRight}
                       className="ml-2 text-primary hover:text-blue-500"
                     />
-                  </Link>
-                </button>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

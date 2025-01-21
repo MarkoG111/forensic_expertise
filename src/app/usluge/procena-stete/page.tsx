@@ -4,7 +4,7 @@ import Head from "next/head";
 
 export default function ProcenaStete() {
   return (
-    <main>
+    <div>
       <Head>
         <title>Procena nastale štete | Mašinski veštak</title>
         <meta
@@ -112,6 +112,6 @@ export default function ProcenaStete() {
           </p>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

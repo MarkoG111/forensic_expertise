@@ -3,7 +3,7 @@ import Head from "next/head";
 
 export default function ProcenaVrednostiIndustrijskihMasina() {
   return (
-    <main>
+    <div>
       <Head>
         <title>Procena vrednosti industrijskih mašina | Mašinski veštak</title>
         <meta
@@ -51,6 +51,6 @@ export default function ProcenaVrednostiIndustrijskihMasina() {
           </p>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

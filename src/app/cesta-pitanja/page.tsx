@@ -38,7 +38,7 @@ export default function CestaPitanja() {
   };
 
   return (
-    <main>
+    <div>
       <Head>
         <title>Česta pitanja | Mašinski veštak</title>
         <meta
@@ -110,6 +110,6 @@ export default function CestaPitanja() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

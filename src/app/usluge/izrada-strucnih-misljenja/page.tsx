@@ -3,7 +3,7 @@ import Head from "next/head";
 
 export default function IzradaStrucnihMisljenja() {
   return (
-    <main>
+    <div>
       <Head>
         <title>Izrada stručnih mišljenja | Mašinski veštak</title>
         <meta
@@ -40,6 +40,6 @@ export default function IzradaStrucnihMisljenja() {
           <p>Izrada stručnih mišljenja</p>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

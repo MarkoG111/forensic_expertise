@@ -51,7 +51,7 @@ export default function Kontakt() {
   };
 
   return (
-    <main className="contact-page">
+    <div className="contact-page">
       <Head>
         <title>Kontakt | Mašinski veštak</title>
         <meta
@@ -165,6 +165,6 @@ export default function Kontakt() {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

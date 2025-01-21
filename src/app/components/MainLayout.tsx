@@ -223,7 +223,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
           </div>
 
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:069/33 07 997" className="text-white">
+            <a href="tel:0641569293" className="text-white">
               <FontAwesomeIcon icon={faPhone} /> 064/15 69 293
             </a>
           </div>

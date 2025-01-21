@@ -12,7 +12,7 @@ export default function Banner({
     <section className={`banner-section ${height}`}>
       <div className="container text-left">
         <div className="banner-content">
-          {subtitle && <h4 className="banner-subtitle">{subtitle}</h4>}
+          {subtitle && <h3 className="banner-subtitle">{subtitle}</h3>}
           {title && <h1 className="banner-title">{title}</h1>}
           {description && <p className="banner-description">{description}</p>}
           {buttonText && buttonLink && (

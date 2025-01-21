@@ -77,8 +77,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="icon" href="/favicon.ico" />
 
         <link rel="canonical" href="https://www.masinskivestak.rs" />
-
-        <title>{metadata.title}</title>
       </head>
       <body>
         <MainLayout>{children}</MainLayout>

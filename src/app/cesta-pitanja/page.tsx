@@ -38,7 +38,7 @@ export default function CestaPitanja() {
   };
 
   return (
-    <div>
+    <div className="faq-page">
       <Head>
         <title>Česta pitanja | Mašinski veštak</title>
         <meta

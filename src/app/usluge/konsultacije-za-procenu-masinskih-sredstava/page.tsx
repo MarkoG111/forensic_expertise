@@ -3,7 +3,7 @@ import Head from "next/head";
 
 export default function KonsultacijaZaProcenuMasinskihSredstava() {
   return (
-    <div>
+    <div className="factory-tools-page">
       <Head>
         <title>
           Konsultacija za procenu mašinskih sredstava | Mašinski veštak

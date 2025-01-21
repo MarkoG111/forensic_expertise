@@ -4,7 +4,7 @@ import Head from "next/head";
 
 export default function ProcenaStete() {
   return (
-    <div>
+    <div className="damage-page">
       <Head>
         <title>Procena nastale štete | Mašinski veštak</title>
         <meta
@@ -34,9 +34,7 @@ export default function ProcenaStete() {
 
       <section className="py-8 text-justify">
         <div className="container px-4 py-6">
-          <h2 className="font-semibold text-gray-800 mb-6">
-            Pregled vozila
-          </h2>
+          <h2 className="font-semibold text-gray-800 mb-6">Pregled vozila</h2>
 
           <ul className="list-disc pl-6 space-y-2 text-gray-700">
             <li>

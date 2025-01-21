@@ -3,10 +3,30 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Banner from "./components/Banner";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <div>
+    <div className="home-page">
+      <Head>
+        <title>Kontakt | Mašinski veštak</title>
+        <meta
+          name="description"
+          content="Portfolio i prezentacija sudskog veštaka za mehaniku. Saznajte više o uslugama procene štete, procene vrednosti, i stručnih mišljenja."
+        />
+        <meta
+          name="keywords"
+          content="mašinski veštak, sudski veštak, procena štete, procena vrednosti, stručna mišljenja, portfolio sudskog veštaka"
+        />
+        <meta property="og:title" content="Kontakt | Mašinski veštak" />
+        <meta
+          property="og:description"
+          content="Prezentacija sudskog veštaka za mehaniku, sa uslugama procene štete, procene vrednosti, i izrade stručnih mišljenja."
+        />
+        <meta property="og:url" content="https://www.masinskivestak.rs" />
+        <meta property="og:type" content="website" />
+      </Head>
+
       {/* Banner Section */}
       <Banner
         title="Sudski veštak mašinske struke"
@@ -94,10 +114,12 @@ export default function Home() {
           <h2 className="text-lg md:text-2xl font-bold text-center md:text-left">
             Spisak sudskih veštaka mašinske struke
           </h2>
-          <a href="/licence.pdf" target="_blank" className="no-underline">
-            <button className="list-button bg-primary hover:primary text-white px-4 py-2 text-sm md:text-base transition-all duration-200">
-              Vidi Spisak
-            </button>
+          <a
+            href="/licence.pdf"
+            target="_blank"
+            className="no-underline list-button bg-primary hover:primary text-white px-4 py-2 text-sm md:text-base transition-all duration-200"
+          >
+            Vidi Spisak
           </a>
         </div>
       </section>
@@ -127,14 +149,15 @@ export default function Home() {
                 nastale štete na vozila, mašine, opreme i ostalih pokretnosti.
               </p>
               <div>
-                <Link href="/usluge/procena-stete">
-                  <button className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center">
-                    Vidi više{" "}
-                    <FontAwesomeIcon
-                      icon={faArrowRight}
-                      className="ml-2 text-primary hover:text-blue-500"
-                    />
-                  </button>
+                <Link
+                  href="/usluge/procena-stete"
+                  className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center"
+                >
+                  Vidi više{" "}
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    className="ml-2 text-primary hover:text-blue-500"
+                  />
                 </Link>
               </div>
             </div>
@@ -156,14 +179,15 @@ export default function Home() {
                 mašinske tehnike.
               </p>
               <div>
-                <Link href="/usluge/procena-vrednosti-industrijskih-masina">
-                  <button className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center">
-                    Vidi više{" "}
-                    <FontAwesomeIcon
-                      icon={faArrowRight}
-                      className="ml-2 text-primary hover:text-blue-500"
-                    />
-                  </button>
+                <Link
+                  href="/usluge/procena-vrednosti-industrijskih-masina"
+                  className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center"
+                >
+                  Vidi više{" "}
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    className="ml-2 text-primary hover:text-blue-500"
+                  />
                 </Link>
               </div>
             </div>
@@ -185,14 +209,15 @@ export default function Home() {
                 proizvodnih sistema.
               </p>
               <div>
-                <Link href="/usluge/procena-vrednosti-alata">
-                  <button className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center">
-                    Vidi više{" "}
-                    <FontAwesomeIcon
-                      icon={faArrowRight}
-                      className="ml-2 text-primary hover:text-blue-500"
-                    />
-                  </button>
+                <Link
+                  href="/usluge/procena-vrednosti-alata"
+                  className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center"
+                >
+                  Vidi više{" "}
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    className="ml-2 text-primary hover:text-blue-500"
+                  />
                 </Link>
               </div>
             </div>
@@ -214,14 +239,15 @@ export default function Home() {
                 dokazi u sudskim postupcima.
               </p>
               <div>
-                <Link href="/usluge/izrada-strucnih-misljenja">
-                  <button className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center">
-                    Vidi više{" "}
-                    <FontAwesomeIcon
-                      icon={faArrowRight}
-                      className="ml-2 text-primary hover:text-blue-500"
-                    />
-                  </button>
+                <Link
+                  href="/usluge/izrada-strucnih-misljenja"
+                  className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center"
+                >
+                  Vidi više{" "}
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    className="ml-2 text-primary hover:text-blue-500"
+                  />
                 </Link>
               </div>
             </div>
@@ -243,14 +269,15 @@ export default function Home() {
                 i upravljanje mašinskom imovinom.
               </p>
               <div>
-                <Link href="/usluge/konsultacije-za-procenu-masinskih-sredstava">
-                  <button className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center">
-                    Vidi više{" "}
-                    <FontAwesomeIcon
-                      icon={faArrowRight}
-                      className="ml-2 text-primary hover:text-blue-500"
-                    />
-                  </button>
+                <Link
+                  href="/usluge/konsultacije-za-procenu-masinskih-sredstava"
+                  className="font-bold mt-4 text-primary hover:text-blue-500 flex items-center"
+                >
+                  Vidi više{" "}
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    className="ml-2 text-primary hover:text-blue-500"
+                  />
                 </Link>
               </div>
             </div>

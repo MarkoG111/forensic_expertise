@@ -3,7 +3,7 @@ import Head from "next/head";
 
 export default function ProcenaVrednostiAlata() {
   return (
-    <div>
+    <div className="tools-page">
       <Head>
         <title>Procena vrednosti alata | Mašinski veštak</title>
         <meta

@@ -1,5 +1,5 @@
-import Banner from "@/app/components/Banner";
-import Head from "next/head";
+import Banner from "@/app/components/Banner"
+import Head from "next/head"
 
 export default function IzradaStrucnihMisljenja() {
   return (
@@ -41,5 +41,5 @@ export default function IzradaStrucnihMisljenja() {
         </div>
       </section>
     </div>
-  );
+  )
 }

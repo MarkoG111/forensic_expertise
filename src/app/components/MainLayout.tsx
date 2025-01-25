@@ -1,17 +1,17 @@
-"use client";
+"use client"
 
-import { ReactNode, useEffect, useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ReactNode, useEffect, useState } from "react"
+import Link from "next/link"
+import Image from "next/image"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faPhone,
   faMapMarked,
   faEnvelope,
   faBars,
   faTimes,
-} from "@fortawesome/free-solid-svg-icons";
-import { usePathname } from "next/navigation";
+} from "@fortawesome/free-solid-svg-icons"
+import { usePathname } from "next/navigation"
 
 function CustomLink({
   href,
@@ -19,10 +19,10 @@ function CustomLink({
   active,
   dropdownItems,
 }: {
-  href: string;
-  children: React.ReactNode;
-  active: boolean;
-  dropdownItems?: { href: string; label: string }[];
+  href: string
+  children: React.ReactNode
+  active: boolean
+  dropdownItems?: { href: string; label: string }[]
 }) {
   return (
     <div className={`relative mt-3 ${dropdownItems ? "group" : ""}`}>
@@ -42,7 +42,7 @@ function CustomLink({
         </ul>
       )}
     </div>
-  );
+  )
 }
 
 function MobileMenu({
@@ -50,11 +50,11 @@ function MobileMenu({
   onClose,
   pathname,
 }: {
-  isOpen: boolean;
-  onClose: () => void;
-  pathname: string;
+  isOpen: boolean
+  onClose: () => void
+  pathname: string
 }) {
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false)
 
   const services = [
     { href: "/usluge/procena-stete", label: "Procena štete" },
@@ -74,7 +74,7 @@ function MobileMenu({
       href: "/usluge/konsultacije-za-procenu-masinskih-sredstava",
       label: "Konsultacije u proceni mašina",
     },
-  ];
+  ]
 
   return (
     <div
@@ -169,42 +169,42 @@ function MobileMenu({
         </nav>
       </div>
     </div>
-  );
+  )
 }
 
 export default function MainLayout({ children }: { children: ReactNode }) {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
-  const pathname = usePathname();
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0.00001) {
-        setIsScrolled(true);
+        setIsScrolled(true)
       } else {
-        setIsScrolled(false);
+        setIsScrolled(false)
       }
-    };
+    }
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll)
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
 
   useEffect(() => {
     if (isMobileMenuOpen) {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = "hidden"
     } else {
-      document.body.style.overflow = "unset";
+      document.body.style.overflow = "unset"
     }
-  }, [isMobileMenuOpen]);
+  }, [isMobileMenuOpen])
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+    setIsMobileMenuOpen(!isMobileMenuOpen)
+  }
 
   return (
     <>
@@ -354,5 +354,5 @@ export default function MainLayout({ children }: { children: ReactNode }) {
         </p>
       </div>
     </>
-  );
+  )
 }

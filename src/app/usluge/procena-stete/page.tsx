@@ -1,6 +1,6 @@
-import Banner from "@/app/components/Banner";
-import Image from "next/image";
-import Head from "next/head";
+import Banner from "@/app/components/Banner"
+import Image from "next/image"
+import Head from "next/head"
 
 export default function ProcenaStete() {
   return (
@@ -78,7 +78,6 @@ export default function ProcenaStete() {
               title="nastala šteta"
               width={800}
               height={100}
-              layout="responsive"
             />
           </div>
 
@@ -111,5 +110,5 @@ export default function ProcenaStete() {
         </div>
       </section>
     </div>
-  );
+  )
 }

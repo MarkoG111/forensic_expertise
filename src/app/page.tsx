@@ -3,30 +3,39 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Banner from "./components/Banner";
-import Head from "next/head";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Početna | Mašinski veštak",
+  description:
+    "Portfolio i prezentacija sudskog veštaka za mehaniku. Saznajte više o uslugama procene štete, procene vrednosti, i stručnih mišljenja.",
+  keywords: [
+    "mašinski veštak",
+    "sudski veštak",
+    "procena štete",
+    "procena vrednosti",
+    "stručna mišljenja",
+    "portfolio sudskog veštaka",
+  ].join(", "),
+  openGraph: {
+    title: "Početna | Mašinski veštak",
+    description:
+      "Prezentacija sudskog veštaka za mehaniku, sa uslugama procene štete, procene vrednosti, i izrade stručnih mišljenja.",
+    url: "https://www.masinskivestak.rs",
+    images: ["https://www.masinskivestak.rs/images/baner.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Početna | Mašinski veštak",
+    description:
+      "Prezentacija sudskog veštaka za mehaniku, sa uslugama procene štete, procene vrednosti, i izrade stručnih mišljenja.",
+    images: ["https://www.masinskivestak.rs/images/baner.png"],
+  },
+};
 
 export default function Home() {
   return (
     <div className="home-page">
-      <Head>
-        <title>Kontakt | Mašinski veštak</title>
-        <meta
-          name="description"
-          content="Portfolio i prezentacija sudskog veštaka za mehaniku. Saznajte više o uslugama procene štete, procene vrednosti, i stručnih mišljenja."
-        />
-        <meta
-          name="keywords"
-          content="mašinski veštak, sudski veštak, procena štete, procena vrednosti, stručna mišljenja, portfolio sudskog veštaka"
-        />
-        <meta property="og:title" content="Kontakt | Mašinski veštak" />
-        <meta
-          property="og:description"
-          content="Prezentacija sudskog veštaka za mehaniku, sa uslugama procene štete, procene vrednosti, i izrade stručnih mišljenja."
-        />
-        <meta property="og:url" content="https://www.masinskivestak.rs" />
-        <meta property="og:type" content="website" />
-      </Head>
-
       {/* Banner Section */}
       <Banner
         title="Sudski veštak mašinske struke"
@@ -45,10 +54,10 @@ export default function Home() {
         <div className="container lg:flex">
           {/* Text Content */}
           <div className="about-content text-center md:text-left w-full lg:w-1/2">
-            <h2 className="font-bold mb-4">
+            <h3 className="font-bold mb-4">
               Sudski veštak mašinske struke, <br />
               Bratislav Igrutinović
-            </h2>
+            </h3>
             <p>
               Kao stalni sudski veštak mašinske struke vršim usluge procene
               vrednosti pokretnosti odnosno mašina, mašinske opreme, motornih
@@ -101,7 +110,6 @@ export default function Home() {
                 width={750}
                 height={450}
                 title="Bratislav Igrutinović"
-                layout="intrinsic"
               />
             </picture>
           </div>

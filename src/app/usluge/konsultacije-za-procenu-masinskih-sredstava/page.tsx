@@ -1,5 +1,5 @@
-import Banner from "@/app/components/Banner";
-import Head from "next/head";
+import Banner from "@/app/components/Banner"
+import Head from "next/head"
 
 export default function KonsultacijaZaProcenuMasinskihSredstava() {
   return (
@@ -51,5 +51,5 @@ export default function KonsultacijaZaProcenuMasinskihSredstava() {
         </div>
       </section>
     </div>
-  );
+  )
 }

@@ -1,5 +1,5 @@
-import Banner from "@/app/components/Banner";
-import Head from "next/head";
+import Banner from "@/app/components/Banner"
+import Head from "next/head"
 
 export default function ProcenaVrednostiIndustrijskihMasina() {
   return (
@@ -52,5 +52,5 @@ export default function ProcenaVrednostiIndustrijskihMasina() {
         </div>
       </section>
     </div>
-  );
+  )
 }

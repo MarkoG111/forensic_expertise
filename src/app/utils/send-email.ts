@@ -1,11 +1,11 @@
-import sgMail from "@sendgrid/mail";
+import sgMail from "@sendgrid/mail"
 
-sgMail.setApiKey(process.env.SENDGRID_API_KEY || "");
+sgMail.setApiKey(process.env.SENDGRID_API_KEY || "")
 
 interface EmailData {
-  name: string;
-  email: string;
-  message: string;
+  name: string
+  email: string
+  message: string
 }
 
 export const sendEmail = async ({ name, email, message }: EmailData) => {
@@ -16,12 +16,12 @@ export const sendEmail = async ({ name, email, message }: EmailData) => {
     text: message,
     html: `<p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Message:</strong> ${message}</p>`,
     replyTo: email,
-  };
+  }
 
   try {
-    await sgMail.send(msg);
+    await sgMail.send(msg)
   } catch (error) {
-    console.error("Greška pri slanju poruke: ", error);
-    throw new Error("Neuspešno slanje poruke");
+    console.error("Greška pri slanju poruke: ", error)
+    throw new Error("Neuspešno slanje poruke")
   }
-};
+}

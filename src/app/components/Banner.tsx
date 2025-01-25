@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "next/link"
 
 export default function Banner({
   title,
@@ -23,14 +23,14 @@ export default function Banner({
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 type BannerProps = {
-  title?: string;
-  subtitle?: string;
-  description?: string;
-  buttonText?: string;
-  buttonLink?: string;
-  height?: string;
-};
+  title?: string
+  subtitle?: string
+  description?: string
+  buttonText?: string
+  buttonLink?: string
+  height?: string
+}

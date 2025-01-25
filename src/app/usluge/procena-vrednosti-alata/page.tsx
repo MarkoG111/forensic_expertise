@@ -1,5 +1,5 @@
-import Banner from "@/app/components/Banner";
-import Head from "next/head";
+import Banner from "@/app/components/Banner"
+import Head from "next/head"
 
 export default function ProcenaVrednostiAlata() {
   return (
@@ -46,5 +46,5 @@ export default function ProcenaVrednostiAlata() {
         </div>
       </section>
     </div>
-  );
+  )
 }
